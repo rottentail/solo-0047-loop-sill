@@ -1,0 +1,322 @@
+{
+  "project_shape": "fullstack",
+  "modules": [
+    {
+      "id": "routes",
+      "path": "loopsill/routes.py",
+      "responsibility": "对浏览器暴露媒体登记、工作台和封存取件路由"
+    },
+    {
+      "id": "source",
+      "path": "loopsill/source.py",
+      "responsibility": "解析配对素材并构造有序内容身份"
+    },
+    {
+      "id": "server",
+      "path": "loopsill/server.py",
+      "responsibility": "线程化本地 HTTP 调度及静态网页响应"
+    },
+    {
+      "id": "y4m",
+      "path": "loopsill/y4m.py",
+      "responsibility": "读写受限的 Y4M 画面"
+    },
+    {
+      "id": "pcm",
+      "path": "loopsill/pcm.py",
+      "responsibility": "读写 16 位逐声道 PCM WAV"
+    },
+    {
+      "id": "selection",
+      "path": "loopsill/selection.py",
+      "responsibility": "验证画格区间、交叠大小及来源拾音覆盖"
+    },
+    {
+      "id": "clock",
+      "path": "loopsill/clock.py",
+      "responsibility": "从有理画格坐标推导样本边界"
+    },
+    {
+      "id": "metrics",
+      "path": "loopsill/metrics.py",
+      "responsibility": "计算声画边缘差异"
+    },
+    {
+      "id": "picture",
+      "path": "loopsill/picture.py",
+      "responsibility": "画面取样和交叠渲染"
+    },
+    {
+      "id": "workbench",
+      "path": "loopsill/workbench.py",
+      "responsibility": "串联领域、缓存与工位存储的操作入口"
+    },
+    {
+      "id": "search",
+      "path": "loopsill/search.py",
+      "responsibility": "约束候选和稳定地计算顺序"
+    },
+    {
+      "id": "store",
+      "path": "loopsill/store.py",
+      "responsibility": "保存并查阅 SQLite 媒体、修订和冻结封包"
+    },
+    {
+      "id": "raster",
+      "path": "loopsill/raster.py",
+      "responsibility": "从 YUV 生成可浏览的逐格及拼页位图"
+    },
+    {
+      "id": "waveform",
+      "path": "loopsill/waveform.py",
+      "responsibility": "按窗口聚合各声道峰值"
+    },
+    {
+      "id": "preview",
+      "path": "loopsill/preview.py",
+      "responsibility": "编译单圈声画供预演及封存复用"
+    },
+    {
+      "id": "plan",
+      "path": "loopsill/plan.py",
+      "responsibility": "声明单圈输出到来源画格的映射"
+    },
+    {
+      "id": "sound",
+      "path": "loopsill/sound.py",
+      "responsibility": "根据计划逐格重采样并混合拾音"
+    },
+    {
+      "id": "audition",
+      "path": "loopsill/web/audition.js",
+      "responsibility": "用 Web Audio 样本时钟切换画格并处理拖动"
+    },
+    {
+      "id": "handoff",
+      "path": "loopsill/handoff.py",
+      "responsibility": "生成独立接收的稳定媒体 ZIP"
+    },
+    {
+      "id": "verify",
+      "path": "loopsill/verify.py",
+      "responsibility": "验收封包结构、摘要、媒体事实和读数"
+    },
+    {
+      "id": "offline",
+      "path": "loopsill/offline.py",
+      "responsibility": "离线核对环带、演示导出及排练物化"
+    },
+    {
+      "id": "repetition",
+      "path": "loopsill/repetition.py",
+      "responsibility": "估算输出限制并计算多圈的绝对样本边界"
+    }
+  ],
+  "workflows": [
+    {
+      "id": "ingest",
+      "name": "登记一对放映画面和拾音",
+      "entry": "POST /api/captures",
+      "success": "登记来源摘要与建议区间，同一配对复用既有记录",
+      "failure": "截断或不受支持的媒体在写入前拒绝",
+      "verification": "python3 -m loopsill walkthrough ingest",
+      "steps": [
+        "容器校验与内容身份",
+        "登记来源摘要与建议区间，同一配对复用既有记录"
+      ],
+      "module_ids": [
+        "routes",
+        "source",
+        "y4m",
+        "pcm",
+        "selection",
+        "store"
+      ]
+    },
+    {
+      "id": "measure",
+      "name": "测量选区接缝",
+      "entry": "POST /api/captures/{id}/measure",
+      "success": "以首末画格和拾音样本给出差异及逐声道边界读数",
+      "failure": "拾音区间不可完整覆盖时返回 422",
+      "verification": "python3 -m loopsill walkthrough measure",
+      "steps": [
+        "接缝证据与偏移",
+        "以首末画格和拾音样本给出差异及逐声道边界读数"
+      ],
+      "module_ids": [
+        "workbench",
+        "selection",
+        "clock",
+        "metrics",
+        "picture"
+      ]
+    },
+    {
+      "id": "scan",
+      "name": "搜索选区邻域内的备选接缝",
+      "entry": "POST /api/captures/{id}/scan",
+      "success": "保留原跨度和偏移，返回有确定排序的合法候选",
+      "failure": "越界候选不进入排序，非法半径拒绝",
+      "verification": "python3 -m loopsill walkthrough scan",
+      "steps": [
+        "候选约束与排序",
+        "保留原跨度和偏移，返回有确定排序的合法候选"
+      ],
+      "module_ids": [
+        "workbench",
+        "search",
+        "selection",
+        "metrics"
+      ]
+    },
+    {
+      "id": "save",
+      "name": "保存接缝稿",
+      "entry": "POST /api/captures/{id}/drafts",
+      "success": "追加一份已有来源下的选区快照，历史可再次打开",
+      "failure": "过期预期稿号返回 409 且没有额外新稿",
+      "verification": "python3 -m loopsill walkthrough save",
+      "steps": [
+        "乐观修订链",
+        "追加一份已有来源下的选区快照，历史可再次打开"
+      ],
+      "module_ids": [
+        "routes",
+        "workbench",
+        "selection",
+        "store"
+      ]
+    },
+    {
+      "id": "inspect",
+      "name": "查看源素材画格和声轨",
+      "entry": "GET /api/captures/{id}/frame/{index} · POST /api/captures/{id}/waveform",
+      "success": "读取源 PNG 和相应窗口的双声道峰值",
+      "failure": "越界画格拒绝，波形不生成无效样本",
+      "verification": "python3 -m loopsill walkthrough inspect",
+      "steps": [
+        "采样条带",
+        "读取源 PNG 和相应窗口的双声道峰值"
+      ],
+      "module_ids": [
+        "workbench",
+        "raster",
+        "waveform",
+        "selection"
+      ]
+    },
+    {
+      "id": "preview",
+      "name": "生成可环播的声画预演",
+      "entry": "POST /api/captures/{id}/preview",
+      "success": "同一计划产生拼页、PCM 与交叠位置",
+      "failure": "越界拼页拒绝，切换选区使旧试听失效",
+      "verification": "python3 -m loopsill walkthrough preview",
+      "steps": [
+        "共用画格编排和 PCM 时钟",
+        "同一计划产生拼页、PCM 与交叠位置"
+      ],
+      "module_ids": [
+        "workbench",
+        "preview",
+        "plan",
+        "picture",
+        "sound",
+        "raster",
+        "audition"
+      ]
+    },
+    {
+      "id": "freeze",
+      "name": "封存交付环带",
+      "entry": "POST /api/captures/{id}/handoffs",
+      "success": "从指定保存稿生成可独立验收的稳定封存件",
+      "failure": "未知稿号没有交付包，更新稿不会改写已封存内容",
+      "verification": "python3 -m loopsill walkthrough freeze",
+      "steps": [
+        "独立物化封包",
+        "从指定保存稿生成可独立验收的稳定封存件"
+      ],
+      "module_ids": [
+        "workbench",
+        "store",
+        "preview",
+        "handoff"
+      ]
+    },
+    {
+      "id": "download",
+      "name": "查阅和下载历史环带",
+      "entry": "GET /api/handoffs/{id}",
+      "success": "重开工位后可下载同 ID 和字节的 ZIP",
+      "failure": "不存在的环带返回 404",
+      "verification": "python3 -m loopsill walkthrough download",
+      "steps": [
+        "冻结字节生命周期",
+        "重开工位后可下载同 ID 和字节的 ZIP"
+      ],
+      "module_ids": [
+        "server",
+        "routes",
+        "store",
+        "handoff"
+      ]
+    },
+    {
+      "id": "verify",
+      "name": "离线核验交付环带",
+      "entry": "python3 -m loopsill verify PATH",
+      "success": "对封包布局、摘要、解码及接缝事实执行验收",
+      "failure": "变化成员或声明和媒体不一致时拒绝",
+      "verification": "python3 -m loopsill walkthrough verify",
+      "steps": [
+        "封包结构与媒体一致性",
+        "对封包布局、摘要、解码及接缝事实执行验收"
+      ],
+      "module_ids": [
+        "offline",
+        "verify",
+        "handoff",
+        "y4m",
+        "pcm"
+      ]
+    },
+    {
+      "id": "rehearse",
+      "name": "离线生成指定圈数的排练素材",
+      "entry": "python3 -m loopsill rehearse PATH OUTPUT --turns N",
+      "success": "按绝对画格相位输出多圈 Y4M、WAV 和边界清单",
+      "failure": "超过圈数或输出预算时没有部分结果",
+      "verification": "python3 -m loopsill walkthrough rehearse",
+      "steps": [
+        "跨圈样本相位",
+        "按绝对画格相位输出多圈 Y4M、WAV 和边界清单"
+      ],
+      "module_ids": [
+        "offline",
+        "repetition",
+        "clock",
+        "sound",
+        "handoff"
+      ]
+    }
+  ],
+  "complexity": {
+    "mechanisms": [
+      "resource_lifecycle",
+      "versioning_audit",
+      "error_propagation",
+      "ranking_reorder",
+      "time_semantics",
+      "idempotency",
+      "snapshot_consistency",
+      "export_freeze",
+      "lineage",
+      "capacity",
+      "state_machine",
+      "concurrency",
+      "batch_transaction"
+    ]
+  }
+}

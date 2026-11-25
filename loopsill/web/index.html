@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10171d">
+  <title>环映台 · 放映接缝工作台</title>
+  <link rel="stylesheet" href="/static/workbench.css">
+</head>
+<body>
+  <header class="masthead">
+    <div class="brand"><span class="brand-mark" aria-hidden="true"></span><h1>环映台</h1><span class="subtitle">放映接缝工作台</span></div>
+    <div class="demo-actions"><button type="button" data-demo="pendulum">载入青幕摆灯</button><button type="button" data-demo="counterbeat">载入双节拍幕</button></div>
+  </header>
+  <main>
+    <div class="source-bar panel">
+      <label class="source-select">配对素材 <select id="capture" aria-label="配对素材"></select></label>
+      <div id="facts" class="facts" aria-live="polite">选择演示或登记画面与拾音。</div>
+      <details class="intake"><summary>登记素材</summary>
+        <form id="upload" class="intake-form">
+          <label>显示名称<input name="label" required maxlength="80" placeholder="例如 东墙排练"></label>
+          <label>画面 Y4M<input type="file" name="video" accept=".y4m" required></label>
+          <label>拾音 WAV<input type="file" name="audio" accept=".wav" required></label>
+          <button class="accent" type="submit">登记画面与拾音</button>
+        </form>
+      </details>
+    </div>
+    <div id="notice" role="status" aria-live="polite"></div>
+    <div class="workspace">
+      <section class="panel audition-panel" aria-labelledby="audition-title">
+        <div class="section-head"><h2 id="audition-title">环播预演</h2><span id="plan-summary" class="muted">等待生成</span></div>
+        <div class="projection"><canvas id="projection" width="384" height="216" aria-label="环播画面"></canvas><p id="projection-empty">生成后可跨接缝试听</p><span id="blend" hidden>交叠区</span></div>
+        <div class="transport">
+          <button id="play" type="button" class="accent" disabled>播放</button>
+          <input id="seek" type="range" aria-label="预演画格" min="0" value="0" disabled>
+          <output id="playhead">—</output>
+        </div>
+        <div class="wave-block"><div class="section-head"><h3>源拾音峰值</h3><span id="wave-span" class="muted"></span></div><canvas id="wave" width="720" height="90" aria-label="声道峰值波形"></canvas></div>
+      </section>
+      <section class="panel splice-panel" aria-labelledby="splice-title">
+        <div class="section-head"><h2 id="splice-title">接缝选区</h2><span id="active-revision" class="muted"></span></div>
+        <form id="selection">
+          <fieldset id="selection-controls" disabled>
+            <label>首格（含）<input name="start" type="number" min="0" step="1" value="0" required></label>
+            <label>末端界线（不含）<input name="end" type="number" min="4" step="1" value="4" required></label>
+            <label>交叠格数<input name="overlap" type="number" min="0" max="32" step="1" value="0" required></label>
+            <label>拾音偏移（样本）<input name="offset" type="number" step="1" value="0" required></label>
+          </fieldset>
+        </form>
+        <div class="paired-frames">
+          <figure><div class="thumb"><img id="tail-image" alt="选区末格" hidden></div><figcaption id="tail-caption">末格</figcaption></figure>
+          <figure><div class="thumb"><img id="head-image" alt="选区首格" hidden></div><figcaption id="head-caption">首格</figcaption></figure>
+        </div>
+        <div class="button-row"><button id="measure" type="button" disabled>测量接缝</button><button id="preview" type="button" class="accent" disabled>生成预演</button><button id="save" type="button" disabled>保存新稿</button></div>
+        <table aria-label="接缝读数"><thead><tr><th>接点差异</th><th>处理前</th><th>处理后</th></tr></thead><tbody id="metrics"></tbody></table>
+      </section>
+      <section class="panel scan-panel" aria-labelledby="scan-title">
+        <div class="section-head"><h2 id="scan-title">候选搜索</h2><span id="scan-note" class="muted"></span></div>
+        <form id="scan" class="scan-controls"><label>邻域半径<input name="radius" type="number" min="1" max="24" value="8" required></label><label>优先项<select name="focus"><option value="balanced">均衡</option><option value="picture">画面</option><option value="sound">拾音</option></select></label><button id="scan-run" type="submit" disabled>搜索等长区间</button></form>
+        <div class="table-scroll"><table><thead><tr><th>选区</th><th>移动格数</th><th>亮度差</th><th>总分</th><th>操作</th></tr></thead><tbody id="candidates"></tbody></table></div>
+      </section>
+      <section class="panel history-panel" aria-labelledby="history-title">
+        <div class="section-head"><h2 id="history-title">接缝稿与交付</h2></div>
+        <div id="history-empty" class="muted">保存接缝稿后即可封存。</div>
+        <ul id="history" class="history"></ul>
+      </section>
+    </div>
+  </main>
+  <script type="module" src="/static/main.js"></script>
+</body>
+</html>

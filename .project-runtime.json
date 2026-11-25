@@ -1,0 +1,54 @@
+{
+  "language": "Python 3.11+ / HTML / CSS / JavaScript",
+  "project_shape": "fullstack",
+  "source_extensions": [
+    ".py",
+    ".html",
+    ".css",
+    ".js"
+  ],
+  "testing": "deferred",
+  "build_command": "python3 -m compileall -q loopsill",
+  "workflow_checks": [
+    {
+      "workflow_id": "ingest",
+      "command": "python3 -m loopsill walkthrough ingest"
+    },
+    {
+      "workflow_id": "measure",
+      "command": "python3 -m loopsill walkthrough measure"
+    },
+    {
+      "workflow_id": "scan",
+      "command": "python3 -m loopsill walkthrough scan"
+    },
+    {
+      "workflow_id": "save",
+      "command": "python3 -m loopsill walkthrough save"
+    },
+    {
+      "workflow_id": "inspect",
+      "command": "python3 -m loopsill walkthrough inspect"
+    },
+    {
+      "workflow_id": "preview",
+      "command": "python3 -m loopsill walkthrough preview"
+    },
+    {
+      "workflow_id": "freeze",
+      "command": "python3 -m loopsill walkthrough freeze"
+    },
+    {
+      "workflow_id": "download",
+      "command": "python3 -m loopsill walkthrough download"
+    },
+    {
+      "workflow_id": "verify",
+      "command": "python3 -m loopsill walkthrough verify"
+    },
+    {
+      "workflow_id": "rehearse",
+      "command": "python3 -m loopsill walkthrough rehearse"
+    }
+  ]
+}

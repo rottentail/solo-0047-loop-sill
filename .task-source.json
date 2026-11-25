@@ -1,0 +1,6023 @@
+{
+  "task_source_schema_version": 1,
+  "cc_feedback_profile": "cc-feedback-2611",
+  "project_domain": "游戏、图形与多媒体",
+  "project_subdirection": "音视频处理",
+  "supported_task_types": [
+    "功能开发",
+    "功能优化",
+    "泛Agent需求",
+    "代码重构",
+    "依赖升级与迁移",
+    "质量保障",
+    "项目维护",
+    "技术讨论",
+    "问题排查与诊断",
+    "部署运维"
+  ],
+  "type_coverage": {
+    "功能开发": {
+      "status": "supported",
+      "reason": "跨素材时间、外部放映和接收环节有可复用的独立媒体职责",
+      "source_anchors": [
+        "loopsill/clock.py",
+        "loopsill/handoff.py",
+        "loopsill/metrics.py",
+        "loopsill/offline.py",
+        "loopsill/pcm.py",
+        "loopsill/picture.py",
+        "loopsill/plan.py",
+        "loopsill/preview.py",
+        "loopsill/raster.py",
+        "loopsill/repetition.py",
+        "loopsill/search.py",
+        "loopsill/selection.py",
+        "loopsill/sound.py",
+        "loopsill/source.py",
+        "loopsill/store.py",
+        "loopsill/verify.py",
+        "loopsill/waveform.py",
+        "loopsill/web/audition.js",
+        "loopsill/web/wave.js",
+        "loopsill/workbench.py",
+        "loopsill/y4m.py"
+      ]
+    },
+    "功能优化": {
+      "status": "supported",
+      "reason": "候选、预演、稿本及离线物化有可观察的旧交互和兼容边界",
+      "source_anchors": [
+        "loopsill/clock.py",
+        "loopsill/handoff.py",
+        "loopsill/metrics.py",
+        "loopsill/offline.py",
+        "loopsill/pcm.py",
+        "loopsill/picture.py",
+        "loopsill/plan.py",
+        "loopsill/preview.py",
+        "loopsill/raster.py",
+        "loopsill/repetition.py",
+        "loopsill/search.py",
+        "loopsill/selection.py",
+        "loopsill/sound.py",
+        "loopsill/source.py",
+        "loopsill/store.py",
+        "loopsill/verify.py",
+        "loopsill/waveform.py",
+        "loopsill/web/audition.js",
+        "loopsill/web/history.js",
+        "loopsill/web/wave.js",
+        "loopsill/workbench.py",
+        "loopsill/y4m.py"
+      ]
+    },
+    "泛Agent需求": {
+      "status": "supported",
+      "reason": "内置可生成的两套素材、导出的环带和离线排练足以完成跨工位媒体任务",
+      "source_anchors": [
+        "loopsill/clock.py",
+        "loopsill/handoff.py",
+        "loopsill/metrics.py",
+        "loopsill/offline.py",
+        "loopsill/pcm.py",
+        "loopsill/picture.py",
+        "loopsill/plan.py",
+        "loopsill/preview.py",
+        "loopsill/raster.py",
+        "loopsill/repetition.py",
+        "loopsill/search.py",
+        "loopsill/selection.py",
+        "loopsill/sound.py",
+        "loopsill/source.py",
+        "loopsill/store.py",
+        "loopsill/verify.py",
+        "loopsill/waveform.py",
+        "loopsill/web/audition.js",
+        "loopsill/web/history.js",
+        "loopsill/web/wave.js",
+        "loopsill/workbench.py",
+        "loopsill/y4m.py"
+      ]
+    },
+    "代码重构": {
+      "status": "supported",
+      "reason": "时钟、渲染、封装和核验有多入口共享的职责与行为约束",
+      "source_anchors": [
+        "loopsill/clock.py",
+        "loopsill/handoff.py",
+        "loopsill/metrics.py",
+        "loopsill/offline.py",
+        "loopsill/pcm.py",
+        "loopsill/picture.py",
+        "loopsill/plan.py",
+        "loopsill/preview.py",
+        "loopsill/raster.py",
+        "loopsill/repetition.py",
+        "loopsill/search.py",
+        "loopsill/selection.py",
+        "loopsill/sound.py",
+        "loopsill/source.py",
+        "loopsill/store.py",
+        "loopsill/verify.py",
+        "loopsill/waveform.py",
+        "loopsill/web/audition.js",
+        "loopsill/web/history.js",
+        "loopsill/web/wave.js",
+        "loopsill/workbench.py",
+        "loopsill/y4m.py"
+      ]
+    },
+    "依赖升级与迁移": {
+      "status": "supported",
+      "reason": "历史版本的标准库解码、SQLite 工位数据及封包协议提供可导入和比对的旧输入",
+      "source_anchors": [
+        "loopsill/clock.py",
+        "loopsill/handoff.py",
+        "loopsill/metrics.py",
+        "loopsill/offline.py",
+        "loopsill/pcm.py",
+        "loopsill/picture.py",
+        "loopsill/plan.py",
+        "loopsill/preview.py",
+        "loopsill/raster.py",
+        "loopsill/repetition.py",
+        "loopsill/search.py",
+        "loopsill/selection.py",
+        "loopsill/sound.py",
+        "loopsill/source.py",
+        "loopsill/store.py",
+        "loopsill/verify.py",
+        "loopsill/waveform.py",
+        "loopsill/web/audition.js",
+        "loopsill/web/history.js",
+        "loopsill/web/wave.js",
+        "loopsill/workbench.py",
+        "loopsill/y4m.py"
+      ]
+    },
+    "质量保障": {
+      "status": "supported",
+      "reason": "分数速率、双声道与封包语义能经真实工作台入口交叉验证",
+      "source_anchors": [
+        "loopsill/clock.py",
+        "loopsill/handoff.py",
+        "loopsill/metrics.py",
+        "loopsill/offline.py",
+        "loopsill/pcm.py",
+        "loopsill/picture.py",
+        "loopsill/plan.py",
+        "loopsill/preview.py",
+        "loopsill/raster.py",
+        "loopsill/repetition.py",
+        "loopsill/search.py",
+        "loopsill/selection.py",
+        "loopsill/sound.py",
+        "loopsill/source.py",
+        "loopsill/store.py",
+        "loopsill/verify.py",
+        "loopsill/waveform.py",
+        "loopsill/web/audition.js",
+        "loopsill/web/history.js",
+        "loopsill/web/wave.js",
+        "loopsill/workbench.py",
+        "loopsill/y4m.py"
+      ]
+    },
+    "项目维护": {
+      "status": "supported",
+      "reason": "接收规范、输入范围和预演与排练的时钟差异都能依据源码维护",
+      "source_anchors": [
+        "loopsill/clock.py",
+        "loopsill/handoff.py",
+        "loopsill/metrics.py",
+        "loopsill/offline.py",
+        "loopsill/pcm.py",
+        "loopsill/picture.py",
+        "loopsill/plan.py",
+        "loopsill/preview.py",
+        "loopsill/raster.py",
+        "loopsill/repetition.py",
+        "loopsill/search.py",
+        "loopsill/selection.py",
+        "loopsill/sound.py",
+        "loopsill/source.py",
+        "loopsill/store.py",
+        "loopsill/verify.py",
+        "loopsill/waveform.py",
+        "loopsill/web/audition.js",
+        "loopsill/web/history.js",
+        "loopsill/web/wave.js",
+        "loopsill/workbench.py",
+        "loopsill/y4m.py"
+      ]
+    },
+    "技术讨论": {
+      "status": "supported",
+      "reason": "预演时钟、跨圈重采样和搜索判据有可实证的架构取舍",
+      "source_anchors": [
+        "loopsill/clock.py",
+        "loopsill/handoff.py",
+        "loopsill/metrics.py",
+        "loopsill/offline.py",
+        "loopsill/pcm.py",
+        "loopsill/picture.py",
+        "loopsill/plan.py",
+        "loopsill/preview.py",
+        "loopsill/raster.py",
+        "loopsill/repetition.py",
+        "loopsill/search.py",
+        "loopsill/selection.py",
+        "loopsill/sound.py",
+        "loopsill/source.py",
+        "loopsill/store.py",
+        "loopsill/verify.py",
+        "loopsill/waveform.py",
+        "loopsill/web/audition.js",
+        "loopsill/web/history.js",
+        "loopsill/web/wave.js",
+        "loopsill/workbench.py",
+        "loopsill/y4m.py"
+      ]
+    },
+    "问题排查与诊断": {
+      "status": "supported",
+      "reason": "原始资源、稿本、生成结果和接收时钟可提供逐层证据",
+      "source_anchors": [
+        "loopsill/clock.py",
+        "loopsill/handoff.py",
+        "loopsill/metrics.py",
+        "loopsill/offline.py",
+        "loopsill/pcm.py",
+        "loopsill/picture.py",
+        "loopsill/plan.py",
+        "loopsill/preview.py",
+        "loopsill/raster.py",
+        "loopsill/repetition.py",
+        "loopsill/search.py",
+        "loopsill/selection.py",
+        "loopsill/sound.py",
+        "loopsill/source.py",
+        "loopsill/store.py",
+        "loopsill/verify.py",
+        "loopsill/waveform.py",
+        "loopsill/web/audition.js",
+        "loopsill/web/history.js",
+        "loopsill/web/wave.js",
+        "loopsill/workbench.py",
+        "loopsill/y4m.py"
+      ]
+    },
+    "部署运维": {
+      "status": "supported",
+      "reason": "本地进程、SQLite 及浏览器试听链路和离线接收能分别验证",
+      "source_anchors": [
+        "loopsill/clock.py",
+        "loopsill/handoff.py",
+        "loopsill/metrics.py",
+        "loopsill/offline.py",
+        "loopsill/pcm.py",
+        "loopsill/picture.py",
+        "loopsill/plan.py",
+        "loopsill/preview.py",
+        "loopsill/raster.py",
+        "loopsill/repetition.py",
+        "loopsill/search.py",
+        "loopsill/selection.py",
+        "loopsill/sound.py",
+        "loopsill/source.py",
+        "loopsill/store.py",
+        "loopsill/verify.py",
+        "loopsill/waveform.py",
+        "loopsill/web/audition.js",
+        "loopsill/web/history.js",
+        "loopsill/web/wave.js",
+        "loopsill/workbench.py",
+        "loopsill/y4m.py"
+      ]
+    },
+    "Bugfix": {
+      "status": "no_verified_defect",
+      "reason": "工作流验证覆盖正常和代表性拒绝路径。当前没有核实的基线契约违例。"
+    }
+  },
+  "prompt_contract": {
+    "schema_version": 1,
+    "mode": "integrated",
+    "baseline_tier": "deep-task-ready",
+    "generation_scope": {
+      "mode": "all_supported"
+    },
+    "minimum_active_prompts": {
+      "功能开发": 20,
+      "功能优化": 20,
+      "泛Agent需求": 10,
+      "代码重构": 2,
+      "依赖升级与迁移": 2,
+      "质量保障": 2,
+      "项目维护": 2,
+      "技术讨论": 2,
+      "问题排查与诊断": 2,
+      "部署运维": 2
+    },
+    "minimum_anchors": {
+      "功能开发": 25,
+      "功能优化": 25,
+      "泛Agent需求": 15,
+      "代码重构": 15,
+      "依赖升级与迁移": 15,
+      "质量保障": 15,
+      "项目维护": 15,
+      "技术讨论": 15,
+      "问题排查与诊断": 15,
+      "部署运维": 15
+    },
+    "capacity_floor": {
+      "modules": 8,
+      "workflows": 10,
+      "mechanisms": 8,
+      "entities": 8,
+      "state_machines": 5,
+      "extension_seams": 12,
+      "tension_points": 10
+    }
+  },
+  "entities": [
+    {
+      "id": "capture",
+      "label": "配对素材",
+      "relations": [
+        "draft.references.capture"
+      ],
+      "invariants": [
+        "画面、拾音及顺序共同稳定标识素材"
+      ]
+    },
+    {
+      "id": "source_picture",
+      "label": "源画面",
+      "relations": [
+        "capture.contains.source_picture"
+      ],
+      "invariants": [
+        "逐行 8 位 YUV420 偶数尺寸"
+      ]
+    },
+    {
+      "id": "source_sound",
+      "label": "源拾音",
+      "relations": [
+        "capture.contains.source_sound"
+      ],
+      "invariants": [
+        "PCM 样本按声道交错且逐帧完整"
+      ]
+    },
+    {
+      "id": "selection",
+      "label": "接缝选区",
+      "relations": [
+        "draft.snapshots.selection"
+      ],
+      "invariants": [
+        "四个选区字段共同决定有效覆盖"
+      ]
+    },
+    {
+      "id": "candidate",
+      "label": "等长候选",
+      "relations": [
+        "candidate.extends.selection"
+      ],
+      "invariants": [
+        "候选保持跨度、交叠和偏移"
+      ]
+    },
+    {
+      "id": "plan",
+      "label": "单圈计划",
+      "relations": [
+        "plan.renders.selection"
+      ],
+      "invariants": [
+        "每个输出格保留来源映射和输出边界"
+      ]
+    },
+    {
+      "id": "draft",
+      "label": "接缝稿",
+      "relations": [
+        "handoff.materializes.draft"
+      ],
+      "invariants": [
+        "同一来源下序号单调递增"
+      ]
+    },
+    {
+      "id": "handoff",
+      "label": "封存环带",
+      "relations": [
+        "rehearsal.consumes.handoff"
+      ],
+      "invariants": [
+        "已封存字节和成员证据固定"
+      ]
+    },
+    {
+      "id": "rehearsal",
+      "label": "多圈排练",
+      "relations": [
+        "rehearsal.repeats.plan"
+      ],
+      "invariants": [
+        "各圈边界由全程绝对格数决定"
+      ]
+    },
+    {
+      "id": "audition",
+      "label": "网页播放头",
+      "relations": [
+        "audition.follows.plan"
+      ],
+      "invariants": [
+        "播放位置受音频时钟驱动"
+      ]
+    }
+  ],
+  "state_machines": [
+    {
+      "subject": "capture",
+      "states": [
+        "received",
+        "validated",
+        "registered",
+        "rejected"
+      ],
+      "transitions": [
+        "received->validated",
+        "received->rejected",
+        "validated->registered"
+      ],
+      "invariants": [
+        "失败不会登记截断素材"
+      ]
+    },
+    {
+      "subject": "draft",
+      "states": [
+        "pending",
+        "saved",
+        "rejected",
+        "historic"
+      ],
+      "transitions": [
+        "pending->saved",
+        "pending->rejected",
+        "saved->historic"
+      ],
+      "invariants": [
+        "过期预期稿号不会覆盖历史稿"
+      ]
+    },
+    {
+      "subject": "handoff",
+      "states": [
+        "unsealed",
+        "rendered",
+        "sealed",
+        "downloadable"
+      ],
+      "transitions": [
+        "unsealed->rendered",
+        "rendered->sealed",
+        "sealed->downloadable"
+      ],
+      "invariants": [
+        "重复封存返回同一稿本的结果"
+      ]
+    },
+    {
+      "subject": "audition",
+      "states": [
+        "empty",
+        "loaded",
+        "playing",
+        "paused"
+      ],
+      "transitions": [
+        "empty->loaded",
+        "loaded->playing",
+        "playing->paused",
+        "paused->playing",
+        "playing->empty",
+        "paused->empty",
+        "loaded->empty"
+      ],
+      "invariants": [
+        "切换选区清空已加载预演"
+      ]
+    },
+    {
+      "subject": "rehearsal",
+      "states": [
+        "received",
+        "verified",
+        "planned",
+        "written",
+        "rejected"
+      ],
+      "transitions": [
+        "received->verified",
+        "received->rejected",
+        "verified->planned",
+        "verified->rejected",
+        "planned->written"
+      ],
+      "invariants": [
+        "先验收和估算大小，再写输出"
+      ]
+    }
+  ],
+  "capability_families": [
+    {
+      "family": "有理画格与样本时钟",
+      "occupied_by": [
+        "preview",
+        "rehearse"
+      ],
+      "available": true
+    },
+    {
+      "family": "Y4M画面与PCM拾音",
+      "occupied_by": [
+        "ingest"
+      ],
+      "available": true
+    },
+    {
+      "family": "拾音对齐",
+      "occupied_by": [
+        "measure",
+        "scan",
+        "inspect"
+      ],
+      "available": true
+    },
+    {
+      "family": "画面接点",
+      "occupied_by": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "available": true
+    },
+    {
+      "family": "声道接点",
+      "occupied_by": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "available": true
+    },
+    {
+      "family": "接缝候选",
+      "occupied_by": [
+        "scan"
+      ],
+      "available": true
+    },
+    {
+      "family": "声画预演",
+      "occupied_by": [
+        "preview",
+        "freeze"
+      ],
+      "available": true
+    },
+    {
+      "family": "交叠接点",
+      "occupied_by": [
+        "preview",
+        "freeze"
+      ],
+      "available": true
+    },
+    {
+      "family": "接缝稿修订",
+      "occupied_by": [
+        "save",
+        "freeze"
+      ],
+      "available": true
+    },
+    {
+      "family": "放映交付环带",
+      "occupied_by": [
+        "freeze",
+        "download"
+      ],
+      "available": true
+    },
+    {
+      "family": "交付核验",
+      "occupied_by": [
+        "verify",
+        "download"
+      ],
+      "available": true
+    },
+    {
+      "family": "多圈排练",
+      "occupied_by": [
+        "rehearse"
+      ],
+      "available": true
+    },
+    {
+      "family": "试听播放头",
+      "occupied_by": [
+        "preview"
+      ],
+      "available": true
+    },
+    {
+      "family": "源声道波形",
+      "occupied_by": [
+        "inspect",
+        "measure"
+      ],
+      "available": true
+    },
+    {
+      "family": "素材与封存索引",
+      "occupied_by": [
+        "ingest",
+        "save",
+        "download"
+      ],
+      "available": true
+    }
+  ],
+  "extension_seams": [
+    {
+      "id": "clock",
+      "anchor": "loopsill/clock.py loopsill/plan.py loopsill/repetition.py",
+      "entry": "POST /api/captures/{id}/preview",
+      "distinct_outcome": "样本边界由绝对画格和有理速率推导，来源偏移不进入输出时钟",
+      "mechanism": "time_semantics"
+    },
+    {
+      "id": "container",
+      "anchor": "loopsill/source.py loopsill/y4m.py loopsill/pcm.py",
+      "entry": "POST /api/captures",
+      "distinct_outcome": "画面和拾音分别解析，再由有序载荷摘要确定配对身份",
+      "mechanism": "policy_rules"
+    },
+    {
+      "id": "offset",
+      "anchor": "loopsill/selection.py loopsill/clock.py loopsill/metrics.py",
+      "entry": "POST /api/captures/{id}/measure",
+      "distinct_outcome": "有符号样本偏移同时改变首末拾音覆盖",
+      "mechanism": "time_semantics"
+    },
+    {
+      "id": "picture",
+      "anchor": "loopsill/picture.py loopsill/metrics.py loopsill/raster.py",
+      "entry": "POST /api/captures/{id}/measure",
+      "distinct_outcome": "亮度差和显示像素分别从 YUV 数据取得",
+      "mechanism": "policy_rules"
+    },
+    {
+      "id": "sound",
+      "anchor": "loopsill/metrics.py loopsill/pcm.py loopsill/sound.py",
+      "entry": "POST /api/captures/{id}/measure",
+      "distinct_outcome": "双声道保留独立的跳变和窗口均方根读数",
+      "mechanism": "policy_rules"
+    },
+    {
+      "id": "scan",
+      "anchor": "loopsill/search.py loopsill/selection.py loopsill/metrics.py",
+      "entry": "POST /api/captures/{id}/scan",
+      "distinct_outcome": "候选等长平移，丢弃不可用区间，按代价与移动量顺序取八项",
+      "mechanism": "ranking_reorder"
+    },
+    {
+      "id": "proof",
+      "anchor": "loopsill/preview.py loopsill/plan.py loopsill/workbench.py",
+      "entry": "POST /api/captures/{id}/preview",
+      "distinct_outcome": "同一计划决定画格序列、音频长度及生效交叠位置",
+      "mechanism": "snapshot_consistency"
+    },
+    {
+      "id": "overlap",
+      "anchor": "loopsill/plan.py loopsill/sound.py loopsill/picture.py",
+      "entry": "POST /api/captures/{id}/preview",
+      "distinct_outcome": "直通格先输出，尾头混合格收束整圈，画面格混合和音频样本混合分开计算",
+      "mechanism": "time_semantics"
+    },
+    {
+      "id": "draft",
+      "anchor": "loopsill/store.py loopsill/workbench.py loopsill/web/history.js",
+      "entry": "POST /api/captures/{id}/drafts",
+      "distinct_outcome": "追加稿号受预期最新稿约束，历史稿固定保留原选区和偏移",
+      "mechanism": "versioning_audit"
+    },
+    {
+      "id": "bundle",
+      "anchor": "loopsill/handoff.py loopsill/workbench.py loopsill/store.py",
+      "entry": "POST /api/captures/{id}/handoffs",
+      "distinct_outcome": "按已保存稿号封存媒体、来源与摘要，重复封存复用同一结果",
+      "mechanism": "export_freeze"
+    },
+    {
+      "id": "verify",
+      "anchor": "loopsill/verify.py loopsill/offline.py",
+      "entry": "python3 -m loopsill verify PATH",
+      "distinct_outcome": "封包成员摘要与解码后的尺寸、时钟及接缝事实须分别核对",
+      "mechanism": "lineage"
+    },
+    {
+      "id": "repeat",
+      "anchor": "loopsill/repetition.py loopsill/sound.py loopsill/offline.py",
+      "entry": "python3 -m loopsill rehearse PATH OUTPUT --turns N",
+      "distinct_outcome": "同一单圈可对应多个绝对圈宽，输出大小在物化前受限",
+      "mechanism": "capacity"
+    },
+    {
+      "id": "preview",
+      "anchor": "loopsill/web/audition.js loopsill/workbench.py",
+      "entry": "POST /api/captures/{id}/preview",
+      "distinct_outcome": "音频缓冲采样时钟驱動畫格索引，抽页只供画面展示",
+      "mechanism": "state_machine"
+    },
+    {
+      "id": "wave",
+      "anchor": "loopsill/waveform.py loopsill/web/wave.js",
+      "entry": "GET /api/captures/{id}/frame/{index} · POST /api/captures/{id}/waveform",
+      "distinct_outcome": "源拾音峰值按所选样本区间分别聚合各声道",
+      "mechanism": "time_semantics"
+    },
+    {
+      "id": "store",
+      "anchor": "loopsill/store.py loopsill/workbench.py",
+      "entry": "POST /api/captures",
+      "distinct_outcome": "媒体字节和稿号索引都落在同一工位目录的 SQLite 库内",
+      "mechanism": "recovery_rollback"
+    }
+  ],
+  "tension_points": [
+    {
+      "workflow_id": "ingest",
+      "description": "内容身份必须涵盖两份载荷，并且只在容器检查通过后可复用",
+      "observable_failure": "截断或不受支持的媒体在写入前拒绝"
+    },
+    {
+      "workflow_id": "measure",
+      "description": "画格索引有效时，偏移仍可使拾音区间无效",
+      "observable_failure": "拾音区间不可完整覆盖时返回 422"
+    },
+    {
+      "workflow_id": "scan",
+      "description": "局部候选有更低差异仍须满足双媒体覆盖",
+      "observable_failure": "越界候选不进入排序，非法半径拒绝"
+    },
+    {
+      "workflow_id": "save",
+      "description": "不同工位页面可根据同一旧稿号提交不同选区",
+      "observable_failure": "过期预期稿号返回 409 且没有额外新稿"
+    },
+    {
+      "workflow_id": "inspect",
+      "description": "源画格窗口和拾音峰值采用不同坐标单位",
+      "observable_failure": "越界画格拒绝，波形不生成无效样本"
+    },
+    {
+      "workflow_id": "preview",
+      "description": "有理帧率下，输出画格边界与浏览器 PCM 播放位置需可互相定位",
+      "observable_failure": "越界拼页拒绝，切换选区使旧试听失效"
+    },
+    {
+      "workflow_id": "freeze",
+      "description": "封存时必须引用所选的旧稿，且相同稿号可重复请求",
+      "observable_failure": "未知稿号没有交付包，更新稿不会改写已封存内容"
+    },
+    {
+      "workflow_id": "download",
+      "description": "下载须使用封存字节，源稿或新选区可能已经变化",
+      "observable_failure": "不存在的环带返回 404"
+    },
+    {
+      "workflow_id": "verify",
+      "description": "对文件完整性的证明不能替代对时钟和媒体事实的验证",
+      "observable_failure": "变化成员或声明和媒体不一致时拒绝"
+    },
+    {
+      "workflow_id": "rehearse",
+      "description": "整圈局部取整和全程绝对取整在分数帧率下产生不同长度",
+      "observable_failure": "超过圈数或输出预算时没有部分结果"
+    }
+  ],
+  "prompt_anchors": [
+    {
+      "id": "D01",
+      "task_type": "功能开发",
+      "capability_family": "拾音对齐",
+      "subject": "拾音对齐",
+      "state": "有符号样本偏移，瞬态配对标定",
+      "invariant": "有符号样本偏移同时改变首末拾音覆盖",
+      "observable": "测量时的边界和可用区间",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "inspect"
+      ],
+      "source_anchors": [
+        "loopsill/selection.py",
+        "loopsill/clock.py",
+        "loopsill/metrics.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/selection.py",
+          "loopsill/clock.py",
+          "loopsill/metrics.py"
+        ],
+        "functions": [
+          "interpret",
+          "sample",
+          "measure"
+        ]
+      },
+      "extension_seam_id": "offset"
+    },
+    {
+      "id": "D02",
+      "task_type": "功能开发",
+      "capability_family": "画面接点",
+      "subject": "画面接点",
+      "state": "亮色空间取样，多投影分区接缝导引",
+      "invariant": "亮度差和显示像素分别从 YUV 数据取得",
+      "observable": "接点邻帧及其差分值",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/picture.py",
+        "loopsill/metrics.py",
+        "loopsill/raster.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/picture.py",
+          "loopsill/metrics.py",
+          "loopsill/raster.py"
+        ],
+        "functions": [
+          "luma_difference",
+          "boundary",
+          "frame_png"
+        ]
+      },
+      "extension_seam_id": "picture"
+    },
+    {
+      "id": "D03",
+      "task_type": "功能开发",
+      "capability_family": "声道接点",
+      "subject": "声道接点",
+      "state": "双声道边界，多扬声器路由校听",
+      "invariant": "双声道保留独立的跳变和窗口均方根读数",
+      "observable": "各声道接点误差",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/metrics.py",
+        "loopsill/pcm.py",
+        "loopsill/sound.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/metrics.py",
+          "loopsill/pcm.py",
+          "loopsill/sound.py"
+        ],
+        "functions": [
+          "audio_edge",
+          "sample",
+          "render_sound"
+        ]
+      },
+      "extension_seam_id": "sound"
+    },
+    {
+      "id": "D04",
+      "task_type": "功能开发",
+      "capability_family": "有理画格与样本时钟",
+      "subject": "有理画格与样本时钟",
+      "state": "非整数帧率或采样率，外部探灯脉冲对照",
+      "invariant": "样本边界由绝对画格和有理速率推导，来源偏移不进入输出时钟",
+      "observable": "视频画格与音频边界表",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "preview",
+        "rehearse"
+      ],
+      "source_anchors": [
+        "loopsill/clock.py",
+        "loopsill/plan.py",
+        "loopsill/repetition.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/clock.py",
+          "loopsill/plan.py",
+          "loopsill/repetition.py"
+        ],
+        "functions": [
+          "boundaries",
+          "make_plan",
+          "repeat_samples"
+        ]
+      },
+      "extension_seam_id": "clock"
+    },
+    {
+      "id": "D05",
+      "task_type": "功能开发",
+      "capability_family": "接缝候选",
+      "subject": "接缝候选",
+      "state": "固定跨度搜索，混合周期测定",
+      "invariant": "候选等长平移，丢弃不可用区间，按代价与移动量顺序取八项",
+      "observable": "排序及排除数",
+      "primary_mechanism": "ranking_reorder",
+      "workflow_ids": [
+        "scan"
+      ],
+      "source_anchors": [
+        "loopsill/search.py",
+        "loopsill/selection.py",
+        "loopsill/metrics.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/search.py",
+          "loopsill/selection.py",
+          "loopsill/metrics.py"
+        ],
+        "functions": [
+          "scan",
+          "interpret",
+          "measure"
+        ]
+      },
+      "extension_seam_id": "scan"
+    },
+    {
+      "id": "D06",
+      "task_type": "功能开发",
+      "capability_family": "声画预演",
+      "subject": "声画预演",
+      "state": "生成单圈前后，替代接点双窗口盲听",
+      "invariant": "同一计划决定画格序列、音频长度及生效交叠位置",
+      "observable": "跨缝试听界面与取帧序列",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "preview",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/preview.py",
+        "loopsill/plan.py",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/preview.py",
+          "loopsill/plan.py",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "compile_preview",
+          "make_plan",
+          "preview_info"
+        ]
+      },
+      "extension_seam_id": "proof"
+    },
+    {
+      "id": "D07",
+      "task_type": "功能开发",
+      "capability_family": "交叠接点",
+      "subject": "交叠接点",
+      "state": "首尾交叠渲染，反射式往返环播",
+      "invariant": "直通格先输出，尾头混合格收束整圈，画面格混合和音频样本混合分开计算",
+      "observable": "首个直通画格与末尾混合画格",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "preview",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/plan.py",
+        "loopsill/sound.py",
+        "loopsill/picture.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/plan.py",
+          "loopsill/sound.py",
+          "loopsill/picture.py"
+        ],
+        "functions": [
+          "make_plan",
+          "render_sound",
+          "render_picture"
+        ]
+      },
+      "extension_seam_id": "overlap"
+    },
+    {
+      "id": "D08",
+      "task_type": "功能开发",
+      "capability_family": "放映交付环带",
+      "subject": "放映交付环带",
+      "state": "封存及下载，放映机接入文件输出",
+      "invariant": "按已保存稿号封存媒体、来源与摘要，重复封存复用同一结果",
+      "observable": "ZIP、共同时间表与摘要",
+      "primary_mechanism": "export_freeze",
+      "workflow_ids": [
+        "freeze",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/handoff.py",
+        "loopsill/workbench.py",
+        "loopsill/store.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/handoff.py",
+          "loopsill/workbench.py",
+          "loopsill/store.py"
+        ],
+        "functions": [
+          "make_handoff",
+          "freeze",
+          "put_handoff"
+        ]
+      },
+      "extension_seam_id": "bundle"
+    },
+    {
+      "id": "D09",
+      "task_type": "功能开发",
+      "capability_family": "交付核验",
+      "subject": "交付核验",
+      "state": "离线接收，入场验收对照台",
+      "invariant": "封包成员摘要与解码后的尺寸、时钟及接缝事实须分别核对",
+      "observable": "离线验收输出",
+      "primary_mechanism": "lineage",
+      "workflow_ids": [
+        "verify",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/verify.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/verify.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "verify_handoff",
+          "verify_facts",
+          "open_handoff"
+        ]
+      },
+      "extension_seam_id": "verify"
+    },
+    {
+      "id": "D10",
+      "task_type": "功能开发",
+      "capability_family": "多圈排练",
+      "subject": "多圈排练",
+      "state": "重复成片，外部口令同步下发",
+      "invariant": "同一单圈可对应多个绝对圈宽，输出大小在物化前受限",
+      "observable": "按圈样本观察点",
+      "primary_mechanism": "capacity",
+      "workflow_ids": [
+        "rehearse"
+      ],
+      "source_anchors": [
+        "loopsill/repetition.py",
+        "loopsill/sound.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/repetition.py",
+          "loopsill/sound.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "repeat_samples",
+          "sample_from_span",
+          "rehearse"
+        ]
+      },
+      "extension_seam_id": "repeat"
+    },
+    {
+      "id": "D11",
+      "task_type": "功能开发",
+      "capability_family": "试听播放头",
+      "subject": "试听播放头",
+      "state": "播放、跳转和停下，双窗口同相位放映",
+      "invariant": "音频缓冲采样时钟驱動畫格索引，抽页只供画面展示",
+      "observable": "预演画布和圈位",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/web/audition.js",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/web/audition.js",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "frameAt",
+          "currentPosition",
+          "preview_sheet"
+        ]
+      },
+      "extension_seam_id": "preview"
+    },
+    {
+      "id": "D12",
+      "task_type": "功能开发",
+      "capability_family": "源声道波形",
+      "subject": "源声道波形",
+      "state": "候选位置检查，频带接缝试听",
+      "invariant": "源拾音峰值按所选样本区间分别聚合各声道",
+      "observable": "峰值波形桶",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "inspect",
+        "measure"
+      ],
+      "source_anchors": [
+        "loopsill/waveform.py",
+        "loopsill/web/wave.js"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/waveform.py",
+          "loopsill/web/wave.js"
+        ],
+        "functions": [
+          "waveform",
+          "envelope",
+          "drawWave"
+        ]
+      },
+      "extension_seam_id": "wave"
+    },
+    {
+      "id": "D13",
+      "task_type": "功能开发",
+      "capability_family": "Y4M画面与PCM拾音",
+      "subject": "Y4M画面与PCM拾音",
+      "state": "配对前容器就绪，无声源合成适配",
+      "invariant": "画面和拾音分别解析，再由有序载荷摘要确定配对身份",
+      "observable": "登记结果或格式错误",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "ingest"
+      ],
+      "source_anchors": [
+        "loopsill/source.py",
+        "loopsill/y4m.py",
+        "loopsill/pcm.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/source.py",
+          "loopsill/y4m.py",
+          "loopsill/pcm.py"
+        ],
+        "functions": [
+          "decode_capture",
+          "parse_y4m",
+          "parse_wav"
+        ]
+      },
+      "extension_seam_id": "container"
+    },
+    {
+      "id": "D14",
+      "task_type": "功能开发",
+      "capability_family": "素材与封存索引",
+      "subject": "素材与封存索引",
+      "state": "工作目录重开，独立工位合并封存",
+      "invariant": "媒体字节和稿号索引都落在同一工位目录的 SQLite 库内",
+      "observable": "重启打开旧稿及环带",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "ingest",
+        "save",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/store.py",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/store.py",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "connect",
+          "handoff",
+          "_read_source"
+        ]
+      },
+      "extension_seam_id": "store"
+    },
+    {
+      "id": "D15",
+      "task_type": "功能开发",
+      "capability_family": "画面接点",
+      "subject": "画面接点",
+      "state": "亮色空间取样，周期亮度风险图",
+      "invariant": "亮度差和显示像素分别从 YUV 数据取得",
+      "observable": "接点邻帧及其差分值",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/picture.py",
+        "loopsill/metrics.py",
+        "loopsill/raster.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/picture.py",
+          "loopsill/metrics.py",
+          "loopsill/raster.py"
+        ],
+        "functions": [
+          "luma_difference",
+          "boundary",
+          "frame_png"
+        ]
+      },
+      "extension_seam_id": "picture"
+    },
+    {
+      "id": "D16",
+      "task_type": "功能开发",
+      "capability_family": "声道接点",
+      "subject": "声道接点",
+      "state": "双声道边界，相位保真环尾修复轨",
+      "invariant": "双声道保留独立的跳变和窗口均方根读数",
+      "observable": "各声道接点误差",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/metrics.py",
+        "loopsill/pcm.py",
+        "loopsill/sound.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/metrics.py",
+          "loopsill/pcm.py",
+          "loopsill/sound.py"
+        ],
+        "functions": [
+          "audio_edge",
+          "sample",
+          "render_sound"
+        ]
+      },
+      "extension_seam_id": "sound"
+    },
+    {
+      "id": "D17",
+      "task_type": "功能开发",
+      "capability_family": "多圈排练",
+      "subject": "多圈排练",
+      "state": "重复成片，多环带排程",
+      "invariant": "同一单圈可对应多个绝对圈宽，输出大小在物化前受限",
+      "observable": "按圈样本观察点",
+      "primary_mechanism": "capacity",
+      "workflow_ids": [
+        "rehearse"
+      ],
+      "source_anchors": [
+        "loopsill/repetition.py",
+        "loopsill/sound.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/repetition.py",
+          "loopsill/sound.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "repeat_samples",
+          "sample_from_span",
+          "rehearse"
+        ]
+      },
+      "extension_seam_id": "repeat"
+    },
+    {
+      "id": "D18",
+      "task_type": "功能开发",
+      "capability_family": "有理画格与样本时钟",
+      "subject": "有理画格与样本时钟",
+      "state": "非整数帧率或采样率，旋转舞台相位标记",
+      "invariant": "样本边界由绝对画格和有理速率推导，来源偏移不进入输出时钟",
+      "observable": "视频画格与音频边界表",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "preview",
+        "rehearse"
+      ],
+      "source_anchors": [
+        "loopsill/clock.py",
+        "loopsill/plan.py",
+        "loopsill/repetition.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/clock.py",
+          "loopsill/plan.py",
+          "loopsill/repetition.py"
+        ],
+        "functions": [
+          "boundaries",
+          "make_plan",
+          "repeat_samples"
+        ]
+      },
+      "extension_seam_id": "clock"
+    },
+    {
+      "id": "D19",
+      "task_type": "功能开发",
+      "capability_family": "放映交付环带",
+      "subject": "放映交付环带",
+      "state": "封存及下载，接缝纸面交接图",
+      "invariant": "按已保存稿号封存媒体、来源与摘要，重复封存复用同一结果",
+      "observable": "ZIP、共同时间表与摘要",
+      "primary_mechanism": "export_freeze",
+      "workflow_ids": [
+        "freeze",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/handoff.py",
+        "loopsill/workbench.py",
+        "loopsill/store.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/handoff.py",
+          "loopsill/workbench.py",
+          "loopsill/store.py"
+        ],
+        "functions": [
+          "make_handoff",
+          "freeze",
+          "put_handoff"
+        ]
+      },
+      "extension_seam_id": "bundle"
+    },
+    {
+      "id": "D20",
+      "task_type": "功能开发",
+      "capability_family": "声画预演",
+      "subject": "声画预演",
+      "state": "生成单圈前后，接点叠屏对齐拖动",
+      "invariant": "同一计划决定画格序列、音频长度及生效交叠位置",
+      "observable": "跨缝试听界面与取帧序列",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "preview",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/preview.py",
+        "loopsill/plan.py",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/preview.py",
+          "loopsill/plan.py",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "compile_preview",
+          "make_plan",
+          "preview_info"
+        ]
+      },
+      "extension_seam_id": "proof"
+    },
+    {
+      "id": "D21",
+      "task_type": "功能开发",
+      "capability_family": "接缝候选",
+      "subject": "接缝候选",
+      "state": "固定跨度搜索，双源接缝拼接",
+      "invariant": "候选等长平移，丢弃不可用区间，按代价与移动量顺序取八项",
+      "observable": "排序及排除数",
+      "primary_mechanism": "ranking_reorder",
+      "workflow_ids": [
+        "scan"
+      ],
+      "source_anchors": [
+        "loopsill/search.py",
+        "loopsill/selection.py",
+        "loopsill/metrics.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/search.py",
+          "loopsill/selection.py",
+          "loopsill/metrics.py"
+        ],
+        "functions": [
+          "scan",
+          "interpret",
+          "measure"
+        ]
+      },
+      "extension_seam_id": "scan"
+    },
+    {
+      "id": "D22",
+      "task_type": "功能开发",
+      "capability_family": "交付核验",
+      "subject": "交付核验",
+      "state": "离线接收，封包实际播放回执",
+      "invariant": "封包成员摘要与解码后的尺寸、时钟及接缝事实须分别核对",
+      "observable": "离线验收输出",
+      "primary_mechanism": "lineage",
+      "workflow_ids": [
+        "verify",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/verify.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/verify.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "verify_handoff",
+          "verify_facts",
+          "open_handoff"
+        ]
+      },
+      "extension_seam_id": "verify"
+    },
+    {
+      "id": "D23",
+      "task_type": "功能开发",
+      "capability_family": "源声道波形",
+      "subject": "源声道波形",
+      "state": "候选位置检查，精确瞬态放大镜",
+      "invariant": "源拾音峰值按所选样本区间分别聚合各声道",
+      "observable": "峰值波形桶",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "inspect",
+        "measure"
+      ],
+      "source_anchors": [
+        "loopsill/waveform.py",
+        "loopsill/web/wave.js"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/waveform.py",
+          "loopsill/web/wave.js"
+        ],
+        "functions": [
+          "waveform",
+          "envelope",
+          "drawWave"
+        ]
+      },
+      "extension_seam_id": "wave"
+    },
+    {
+      "id": "D24",
+      "task_type": "功能开发",
+      "capability_family": "Y4M画面与PCM拾音",
+      "subject": "Y4M画面与PCM拾音",
+      "state": "配对前容器就绪，多路同步素材分组",
+      "invariant": "画面和拾音分别解析，再由有序载荷摘要确定配对身份",
+      "observable": "登记结果或格式错误",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "ingest"
+      ],
+      "source_anchors": [
+        "loopsill/source.py",
+        "loopsill/y4m.py",
+        "loopsill/pcm.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/source.py",
+          "loopsill/y4m.py",
+          "loopsill/pcm.py"
+        ],
+        "functions": [
+          "decode_capture",
+          "parse_y4m",
+          "parse_wav"
+        ]
+      },
+      "extension_seam_id": "container"
+    },
+    {
+      "id": "D25",
+      "task_type": "功能开发",
+      "capability_family": "试听播放头",
+      "subject": "试听播放头",
+      "state": "播放、跳转和停下，网页外联控制面",
+      "invariant": "音频缓冲采样时钟驱動畫格索引，抽页只供画面展示",
+      "observable": "预演画布和圈位",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/web/audition.js",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/web/audition.js",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "frameAt",
+          "currentPosition",
+          "preview_sheet"
+        ]
+      },
+      "extension_seam_id": "preview"
+    },
+    {
+      "id": "O01",
+      "task_type": "功能优化",
+      "capability_family": "接缝候选",
+      "subject": "接缝候选",
+      "state": "固定跨度搜索，保留视觉与听觉分歧的候选组",
+      "invariant": "候选等长平移，丢弃不可用区间，按代价与移动量顺序取八项",
+      "observable": "排序及排除数",
+      "primary_mechanism": "ranking_reorder",
+      "workflow_ids": [
+        "scan"
+      ],
+      "source_anchors": [
+        "loopsill/search.py",
+        "loopsill/selection.py",
+        "loopsill/metrics.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/search.py",
+          "loopsill/selection.py",
+          "loopsill/metrics.py"
+        ],
+        "functions": [
+          "scan",
+          "interpret",
+          "measure"
+        ]
+      }
+    },
+    {
+      "id": "O02",
+      "task_type": "功能优化",
+      "capability_family": "有理画格与样本时钟",
+      "subject": "有理画格与样本时钟",
+      "state": "非整数帧率或采样率，正反拖动锁定采样位置",
+      "invariant": "样本边界由绝对画格和有理速率推导，来源偏移不进入输出时钟",
+      "observable": "视频画格与音频边界表",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "preview",
+        "rehearse"
+      ],
+      "source_anchors": [
+        "loopsill/clock.py",
+        "loopsill/plan.py",
+        "loopsill/repetition.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/clock.py",
+          "loopsill/plan.py",
+          "loopsill/repetition.py"
+        ],
+        "functions": [
+          "boundaries",
+          "make_plan",
+          "repeat_samples"
+        ]
+      }
+    },
+    {
+      "id": "O03",
+      "task_type": "功能优化",
+      "capability_family": "声道接点",
+      "subject": "声道接点",
+      "state": "双声道边界，逐次校听响度对齐",
+      "invariant": "双声道保留独立的跳变和窗口均方根读数",
+      "observable": "各声道接点误差",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/metrics.py",
+        "loopsill/pcm.py",
+        "loopsill/sound.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/metrics.py",
+          "loopsill/pcm.py",
+          "loopsill/sound.py"
+        ],
+        "functions": [
+          "audio_edge",
+          "sample",
+          "render_sound"
+        ]
+      }
+    },
+    {
+      "id": "O04",
+      "task_type": "功能优化",
+      "capability_family": "交叠接点",
+      "subject": "交叠接点",
+      "state": "首尾交叠渲染，分开调节声画交叠",
+      "invariant": "直通格先输出，尾头混合格收束整圈，画面格混合和音频样本混合分开计算",
+      "observable": "首个直通画格与末尾混合画格",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "preview",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/plan.py",
+        "loopsill/sound.py",
+        "loopsill/picture.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/plan.py",
+          "loopsill/sound.py",
+          "loopsill/picture.py"
+        ],
+        "functions": [
+          "make_plan",
+          "render_sound",
+          "render_picture"
+        ]
+      }
+    },
+    {
+      "id": "O05",
+      "task_type": "功能优化",
+      "capability_family": "画面接点",
+      "subject": "画面接点",
+      "state": "亮色空间取样，以运动区域复核扫描排序",
+      "invariant": "亮度差和显示像素分别从 YUV 数据取得",
+      "observable": "接点邻帧及其差分值",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/picture.py",
+        "loopsill/metrics.py",
+        "loopsill/raster.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/picture.py",
+          "loopsill/metrics.py",
+          "loopsill/raster.py"
+        ],
+        "functions": [
+          "luma_difference",
+          "boundary",
+          "frame_png"
+        ]
+      }
+    },
+    {
+      "id": "O06",
+      "task_type": "功能优化",
+      "capability_family": "源声道波形",
+      "subject": "源声道波形",
+      "state": "候选位置检查，跨接点波形连续观察",
+      "invariant": "源拾音峰值按所选样本区间分别聚合各声道",
+      "observable": "峰值波形桶",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "inspect",
+        "measure"
+      ],
+      "source_anchors": [
+        "loopsill/waveform.py",
+        "loopsill/web/wave.js"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/waveform.py",
+          "loopsill/web/wave.js"
+        ],
+        "functions": [
+          "waveform",
+          "envelope",
+          "drawWave"
+        ]
+      }
+    },
+    {
+      "id": "O07",
+      "task_type": "功能优化",
+      "capability_family": "放映交付环带",
+      "subject": "放映交付环带",
+      "state": "封存及下载，封包替换安全演练",
+      "invariant": "按已保存稿号封存媒体、来源与摘要，重复封存复用同一结果",
+      "observable": "ZIP、共同时间表与摘要",
+      "primary_mechanism": "export_freeze",
+      "workflow_ids": [
+        "freeze",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/handoff.py",
+        "loopsill/workbench.py",
+        "loopsill/store.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/handoff.py",
+          "loopsill/workbench.py",
+          "loopsill/store.py"
+        ],
+        "functions": [
+          "make_handoff",
+          "freeze",
+          "put_handoff"
+        ]
+      }
+    },
+    {
+      "id": "O08",
+      "task_type": "功能优化",
+      "capability_family": "交付核验",
+      "subject": "交付核验",
+      "state": "离线接收，部分内容预检",
+      "invariant": "封包成员摘要与解码后的尺寸、时钟及接缝事实须分别核对",
+      "observable": "离线验收输出",
+      "primary_mechanism": "lineage",
+      "workflow_ids": [
+        "verify",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/verify.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/verify.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "verify_handoff",
+          "verify_facts",
+          "open_handoff"
+        ]
+      }
+    },
+    {
+      "id": "O09",
+      "task_type": "功能优化",
+      "capability_family": "多圈排练",
+      "subject": "多圈排练",
+      "state": "重复成片，带预热和收尾的排练",
+      "invariant": "同一单圈可对应多个绝对圈宽，输出大小在物化前受限",
+      "observable": "按圈样本观察点",
+      "primary_mechanism": "capacity",
+      "workflow_ids": [
+        "rehearse"
+      ],
+      "source_anchors": [
+        "loopsill/repetition.py",
+        "loopsill/sound.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/repetition.py",
+          "loopsill/sound.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "repeat_samples",
+          "sample_from_span",
+          "rehearse"
+        ]
+      }
+    },
+    {
+      "id": "O10",
+      "task_type": "功能优化",
+      "capability_family": "试听播放头",
+      "subject": "试听播放头",
+      "state": "播放、跳转和停下，从交叠内部起播",
+      "invariant": "音频缓冲采样时钟驱動畫格索引，抽页只供画面展示",
+      "observable": "预演画布和圈位",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/web/audition.js",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/web/audition.js",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "frameAt",
+          "currentPosition",
+          "preview_sheet"
+        ]
+      }
+    },
+    {
+      "id": "O11",
+      "task_type": "功能优化",
+      "capability_family": "素材与封存索引",
+      "subject": "素材与封存索引",
+      "state": "工作目录重开，选择性保留与容量显示",
+      "invariant": "媒体字节和稿号索引都落在同一工位目录的 SQLite 库内",
+      "observable": "重启打开旧稿及环带",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "ingest",
+        "save",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/store.py",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/store.py",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "connect",
+          "handoff",
+          "_read_source"
+        ]
+      }
+    },
+    {
+      "id": "O12",
+      "task_type": "功能优化",
+      "capability_family": "Y4M画面与PCM拾音",
+      "subject": "Y4M画面与PCM拾音",
+      "state": "配对前容器就绪，登记时对比可修正输入",
+      "invariant": "画面和拾音分别解析，再由有序载荷摘要确定配对身份",
+      "observable": "登记结果或格式错误",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "ingest"
+      ],
+      "source_anchors": [
+        "loopsill/source.py",
+        "loopsill/y4m.py",
+        "loopsill/pcm.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/source.py",
+          "loopsill/y4m.py",
+          "loopsill/pcm.py"
+        ],
+        "functions": [
+          "decode_capture",
+          "parse_y4m",
+          "parse_wav"
+        ]
+      }
+    },
+    {
+      "id": "O13",
+      "task_type": "功能优化",
+      "capability_family": "拾音对齐",
+      "subject": "拾音对齐",
+      "state": "有符号样本偏移，连续移动拾音偏移",
+      "invariant": "有符号样本偏移同时改变首末拾音覆盖",
+      "observable": "测量时的边界和可用区间",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "inspect"
+      ],
+      "source_anchors": [
+        "loopsill/selection.py",
+        "loopsill/clock.py",
+        "loopsill/metrics.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/selection.py",
+          "loopsill/clock.py",
+          "loopsill/metrics.py"
+        ],
+        "functions": [
+          "interpret",
+          "sample",
+          "measure"
+        ]
+      }
+    },
+    {
+      "id": "O14",
+      "task_type": "功能优化",
+      "capability_family": "接缝稿修订",
+      "subject": "接缝稿修订",
+      "state": "并行改稿，从历史派生试放分支",
+      "invariant": "追加稿号受预期最新稿约束，历史稿固定保留原选区和偏移",
+      "observable": "历史修订与冲突响应",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "save",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/store.py",
+        "loopsill/workbench.py",
+        "loopsill/web/history.js"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/store.py",
+          "loopsill/workbench.py",
+          "loopsill/web/history.js"
+        ],
+        "functions": [
+          "save",
+          "save",
+          "showHistory"
+        ]
+      }
+    },
+    {
+      "id": "O15",
+      "task_type": "功能优化",
+      "capability_family": "声画预演",
+      "subject": "声画预演",
+      "state": "生成单圈前后，即改即出局部跨缝预演",
+      "invariant": "同一计划决定画格序列、音频长度及生效交叠位置",
+      "observable": "跨缝试听界面与取帧序列",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "preview",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/preview.py",
+        "loopsill/plan.py",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/preview.py",
+          "loopsill/plan.py",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "compile_preview",
+          "make_plan",
+          "preview_info"
+        ]
+      }
+    },
+    {
+      "id": "O16",
+      "task_type": "功能优化",
+      "capability_family": "接缝候选",
+      "subject": "接缝候选",
+      "state": "固定跨度搜索，同时容纳候选时长浮动",
+      "invariant": "候选等长平移，丢弃不可用区间，按代价与移动量顺序取八项",
+      "observable": "排序及排除数",
+      "primary_mechanism": "ranking_reorder",
+      "workflow_ids": [
+        "scan"
+      ],
+      "source_anchors": [
+        "loopsill/search.py",
+        "loopsill/selection.py",
+        "loopsill/metrics.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/search.py",
+          "loopsill/selection.py",
+          "loopsill/metrics.py"
+        ],
+        "functions": [
+          "scan",
+          "interpret",
+          "measure"
+        ]
+      }
+    },
+    {
+      "id": "O17",
+      "task_type": "功能优化",
+      "capability_family": "画面接点",
+      "subject": "画面接点",
+      "state": "亮色空间取样，区分 luma 与色差突变",
+      "invariant": "亮度差和显示像素分别从 YUV 数据取得",
+      "observable": "接点邻帧及其差分值",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/picture.py",
+        "loopsill/metrics.py",
+        "loopsill/raster.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/picture.py",
+          "loopsill/metrics.py",
+          "loopsill/raster.py"
+        ],
+        "functions": [
+          "luma_difference",
+          "boundary",
+          "frame_png"
+        ]
+      }
+    },
+    {
+      "id": "O18",
+      "task_type": "功能优化",
+      "capability_family": "声道接点",
+      "subject": "声道接点",
+      "state": "双声道边界，绝对峰值与噪声底联合筛候选",
+      "invariant": "双声道保留独立的跳变和窗口均方根读数",
+      "observable": "各声道接点误差",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/metrics.py",
+        "loopsill/pcm.py",
+        "loopsill/sound.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/metrics.py",
+          "loopsill/pcm.py",
+          "loopsill/sound.py"
+        ],
+        "functions": [
+          "audio_edge",
+          "sample",
+          "render_sound"
+        ]
+      }
+    },
+    {
+      "id": "O19",
+      "task_type": "功能优化",
+      "capability_family": "交叠接点",
+      "subject": "交叠接点",
+      "state": "首尾交叠渲染，叠化时保护亮度阶",
+      "invariant": "直通格先输出，尾头混合格收束整圈，画面格混合和音频样本混合分开计算",
+      "observable": "首个直通画格与末尾混合画格",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "preview",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/plan.py",
+        "loopsill/sound.py",
+        "loopsill/picture.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/plan.py",
+          "loopsill/sound.py",
+          "loopsill/picture.py"
+        ],
+        "functions": [
+          "make_plan",
+          "render_sound",
+          "render_picture"
+        ]
+      }
+    },
+    {
+      "id": "O20",
+      "task_type": "功能优化",
+      "capability_family": "放映交付环带",
+      "subject": "放映交付环带",
+      "state": "封存及下载，接收端只读预览",
+      "invariant": "按已保存稿号封存媒体、来源与摘要，重复封存复用同一结果",
+      "observable": "ZIP、共同时间表与摘要",
+      "primary_mechanism": "export_freeze",
+      "workflow_ids": [
+        "freeze",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/handoff.py",
+        "loopsill/workbench.py",
+        "loopsill/store.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/handoff.py",
+          "loopsill/workbench.py",
+          "loopsill/store.py"
+        ],
+        "functions": [
+          "make_handoff",
+          "freeze",
+          "put_handoff"
+        ]
+      }
+    },
+    {
+      "id": "O21",
+      "task_type": "功能优化",
+      "capability_family": "多圈排练",
+      "subject": "多圈排练",
+      "state": "重复成片，排练圈段取样输出",
+      "invariant": "同一单圈可对应多个绝对圈宽，输出大小在物化前受限",
+      "observable": "按圈样本观察点",
+      "primary_mechanism": "capacity",
+      "workflow_ids": [
+        "rehearse"
+      ],
+      "source_anchors": [
+        "loopsill/repetition.py",
+        "loopsill/sound.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/repetition.py",
+          "loopsill/sound.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "repeat_samples",
+          "sample_from_span",
+          "rehearse"
+        ]
+      }
+    },
+    {
+      "id": "O22",
+      "task_type": "功能优化",
+      "capability_family": "试听播放头",
+      "subject": "试听播放头",
+      "state": "播放、跳转和停下，装置低帧率自动降级",
+      "invariant": "音频缓冲采样时钟驱動畫格索引，抽页只供画面展示",
+      "observable": "预演画布和圈位",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/web/audition.js",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/web/audition.js",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "frameAt",
+          "currentPosition",
+          "preview_sheet"
+        ]
+      }
+    },
+    {
+      "id": "O23",
+      "task_type": "功能优化",
+      "capability_family": "源声道波形",
+      "subject": "源声道波形",
+      "state": "候选位置检查，以峰值域为轴来回缩放",
+      "invariant": "源拾音峰值按所选样本区间分别聚合各声道",
+      "observable": "峰值波形桶",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "inspect",
+        "measure"
+      ],
+      "source_anchors": [
+        "loopsill/waveform.py",
+        "loopsill/web/wave.js"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/waveform.py",
+          "loopsill/web/wave.js"
+        ],
+        "functions": [
+          "waveform",
+          "envelope",
+          "drawWave"
+        ]
+      }
+    },
+    {
+      "id": "O24",
+      "task_type": "功能优化",
+      "capability_family": "接缝稿修订",
+      "subject": "接缝稿修订",
+      "state": "并行改稿，对比任意两份稿的圈长",
+      "invariant": "追加稿号受预期最新稿约束，历史稿固定保留原选区和偏移",
+      "observable": "历史修订与冲突响应",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "save",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/store.py",
+        "loopsill/workbench.py",
+        "loopsill/web/history.js"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/store.py",
+          "loopsill/workbench.py",
+          "loopsill/web/history.js"
+        ],
+        "functions": [
+          "save",
+          "save",
+          "showHistory"
+        ]
+      }
+    },
+    {
+      "id": "O25",
+      "task_type": "功能优化",
+      "capability_family": "交付核验",
+      "subject": "交付核验",
+      "state": "离线接收，验收诊断分级输出",
+      "invariant": "封包成员摘要与解码后的尺寸、时钟及接缝事实须分别核对",
+      "observable": "离线验收输出",
+      "primary_mechanism": "lineage",
+      "workflow_ids": [
+        "verify",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/verify.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/verify.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "verify_handoff",
+          "verify_facts",
+          "open_handoff"
+        ]
+      }
+    },
+    {
+      "id": "S1-clock",
+      "task_type": "泛Agent需求",
+      "capability_family": "有理画格与样本时钟",
+      "subject": "有理画格与样本时钟",
+      "state": "非整数帧率或采样率，从两种演示素材和真实产物提取可携带的交接证据",
+      "invariant": "样本边界由绝对画格和有理速率推导，来源偏移不进入输出时钟",
+      "observable": "视频画格与音频边界表",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "preview",
+        "rehearse"
+      ],
+      "source_anchors": [
+        "loopsill/clock.py",
+        "loopsill/plan.py",
+        "loopsill/repetition.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/clock.py",
+          "loopsill/plan.py",
+          "loopsill/repetition.py"
+        ],
+        "functions": [
+          "boundaries",
+          "make_plan",
+          "repeat_samples"
+        ]
+      }
+    },
+    {
+      "id": "S1-container",
+      "task_type": "泛Agent需求",
+      "capability_family": "Y4M画面与PCM拾音",
+      "subject": "Y4M画面与PCM拾音",
+      "state": "配对前容器就绪，从两种演示素材和真实产物提取可携带的交接证据",
+      "invariant": "画面和拾音分别解析，再由有序载荷摘要确定配对身份",
+      "observable": "登记结果或格式错误",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "ingest"
+      ],
+      "source_anchors": [
+        "loopsill/source.py",
+        "loopsill/y4m.py",
+        "loopsill/pcm.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/source.py",
+          "loopsill/y4m.py",
+          "loopsill/pcm.py"
+        ],
+        "functions": [
+          "decode_capture",
+          "parse_y4m",
+          "parse_wav"
+        ]
+      }
+    },
+    {
+      "id": "S1-offset",
+      "task_type": "泛Agent需求",
+      "capability_family": "拾音对齐",
+      "subject": "拾音对齐",
+      "state": "有符号样本偏移，从两种演示素材和真实产物提取可携带的交接证据",
+      "invariant": "有符号样本偏移同时改变首末拾音覆盖",
+      "observable": "测量时的边界和可用区间",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "inspect"
+      ],
+      "source_anchors": [
+        "loopsill/selection.py",
+        "loopsill/clock.py",
+        "loopsill/metrics.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/selection.py",
+          "loopsill/clock.py",
+          "loopsill/metrics.py"
+        ],
+        "functions": [
+          "interpret",
+          "sample",
+          "measure"
+        ]
+      }
+    },
+    {
+      "id": "S1-picture",
+      "task_type": "泛Agent需求",
+      "capability_family": "画面接点",
+      "subject": "画面接点",
+      "state": "亮色空间取样，从两种演示素材和真实产物提取可携带的交接证据",
+      "invariant": "亮度差和显示像素分别从 YUV 数据取得",
+      "observable": "接点邻帧及其差分值",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/picture.py",
+        "loopsill/metrics.py",
+        "loopsill/raster.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/picture.py",
+          "loopsill/metrics.py",
+          "loopsill/raster.py"
+        ],
+        "functions": [
+          "luma_difference",
+          "boundary",
+          "frame_png"
+        ]
+      }
+    },
+    {
+      "id": "S1-sound",
+      "task_type": "泛Agent需求",
+      "capability_family": "声道接点",
+      "subject": "声道接点",
+      "state": "双声道边界，从两种演示素材和真实产物提取可携带的交接证据",
+      "invariant": "双声道保留独立的跳变和窗口均方根读数",
+      "observable": "各声道接点误差",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/metrics.py",
+        "loopsill/pcm.py",
+        "loopsill/sound.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/metrics.py",
+          "loopsill/pcm.py",
+          "loopsill/sound.py"
+        ],
+        "functions": [
+          "audio_edge",
+          "sample",
+          "render_sound"
+        ]
+      }
+    },
+    {
+      "id": "S1-scan",
+      "task_type": "泛Agent需求",
+      "capability_family": "接缝候选",
+      "subject": "接缝候选",
+      "state": "固定跨度搜索，从两种演示素材和真实产物提取可携带的交接证据",
+      "invariant": "候选等长平移，丢弃不可用区间，按代价与移动量顺序取八项",
+      "observable": "排序及排除数",
+      "primary_mechanism": "ranking_reorder",
+      "workflow_ids": [
+        "scan"
+      ],
+      "source_anchors": [
+        "loopsill/search.py",
+        "loopsill/selection.py",
+        "loopsill/metrics.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/search.py",
+          "loopsill/selection.py",
+          "loopsill/metrics.py"
+        ],
+        "functions": [
+          "scan",
+          "interpret",
+          "measure"
+        ]
+      }
+    },
+    {
+      "id": "S1-proof",
+      "task_type": "泛Agent需求",
+      "capability_family": "声画预演",
+      "subject": "声画预演",
+      "state": "生成单圈前后，从两种演示素材和真实产物提取可携带的交接证据",
+      "invariant": "同一计划决定画格序列、音频长度及生效交叠位置",
+      "observable": "跨缝试听界面与取帧序列",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "preview",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/preview.py",
+        "loopsill/plan.py",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/preview.py",
+          "loopsill/plan.py",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "compile_preview",
+          "make_plan",
+          "preview_info"
+        ]
+      }
+    },
+    {
+      "id": "S1-overlap",
+      "task_type": "泛Agent需求",
+      "capability_family": "交叠接点",
+      "subject": "交叠接点",
+      "state": "首尾交叠渲染，从两种演示素材和真实产物提取可携带的交接证据",
+      "invariant": "直通格先输出，尾头混合格收束整圈，画面格混合和音频样本混合分开计算",
+      "observable": "首个直通画格与末尾混合画格",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "preview",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/plan.py",
+        "loopsill/sound.py",
+        "loopsill/picture.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/plan.py",
+          "loopsill/sound.py",
+          "loopsill/picture.py"
+        ],
+        "functions": [
+          "make_plan",
+          "render_sound",
+          "render_picture"
+        ]
+      }
+    },
+    {
+      "id": "S1-draft",
+      "task_type": "泛Agent需求",
+      "capability_family": "接缝稿修订",
+      "subject": "接缝稿修订",
+      "state": "并行改稿，从两种演示素材和真实产物提取可携带的交接证据",
+      "invariant": "追加稿号受预期最新稿约束，历史稿固定保留原选区和偏移",
+      "observable": "历史修订与冲突响应",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "save",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/store.py",
+        "loopsill/workbench.py",
+        "loopsill/web/history.js"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/store.py",
+          "loopsill/workbench.py",
+          "loopsill/web/history.js"
+        ],
+        "functions": [
+          "save",
+          "save",
+          "showHistory"
+        ]
+      }
+    },
+    {
+      "id": "S1-bundle",
+      "task_type": "泛Agent需求",
+      "capability_family": "放映交付环带",
+      "subject": "放映交付环带",
+      "state": "封存及下载，从两种演示素材和真实产物提取可携带的交接证据",
+      "invariant": "按已保存稿号封存媒体、来源与摘要，重复封存复用同一结果",
+      "observable": "ZIP、共同时间表与摘要",
+      "primary_mechanism": "export_freeze",
+      "workflow_ids": [
+        "freeze",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/handoff.py",
+        "loopsill/workbench.py",
+        "loopsill/store.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/handoff.py",
+          "loopsill/workbench.py",
+          "loopsill/store.py"
+        ],
+        "functions": [
+          "make_handoff",
+          "freeze",
+          "put_handoff"
+        ]
+      }
+    },
+    {
+      "id": "S1-verify",
+      "task_type": "泛Agent需求",
+      "capability_family": "交付核验",
+      "subject": "交付核验",
+      "state": "离线接收，从两种演示素材和真实产物提取可携带的交接证据",
+      "invariant": "封包成员摘要与解码后的尺寸、时钟及接缝事实须分别核对",
+      "observable": "离线验收输出",
+      "primary_mechanism": "lineage",
+      "workflow_ids": [
+        "verify",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/verify.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/verify.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "verify_handoff",
+          "verify_facts",
+          "open_handoff"
+        ]
+      }
+    },
+    {
+      "id": "S1-repeat",
+      "task_type": "泛Agent需求",
+      "capability_family": "多圈排练",
+      "subject": "多圈排练",
+      "state": "重复成片，从两种演示素材和真实产物提取可携带的交接证据",
+      "invariant": "同一单圈可对应多个绝对圈宽，输出大小在物化前受限",
+      "observable": "按圈样本观察点",
+      "primary_mechanism": "capacity",
+      "workflow_ids": [
+        "rehearse"
+      ],
+      "source_anchors": [
+        "loopsill/repetition.py",
+        "loopsill/sound.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/repetition.py",
+          "loopsill/sound.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "repeat_samples",
+          "sample_from_span",
+          "rehearse"
+        ]
+      }
+    },
+    {
+      "id": "S1-preview",
+      "task_type": "泛Agent需求",
+      "capability_family": "试听播放头",
+      "subject": "试听播放头",
+      "state": "播放、跳转和停下，从两种演示素材和真实产物提取可携带的交接证据",
+      "invariant": "音频缓冲采样时钟驱動畫格索引，抽页只供画面展示",
+      "observable": "预演画布和圈位",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/web/audition.js",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/web/audition.js",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "frameAt",
+          "currentPosition",
+          "preview_sheet"
+        ]
+      }
+    },
+    {
+      "id": "S1-wave",
+      "task_type": "泛Agent需求",
+      "capability_family": "源声道波形",
+      "subject": "源声道波形",
+      "state": "候选位置检查，从两种演示素材和真实产物提取可携带的交接证据",
+      "invariant": "源拾音峰值按所选样本区间分别聚合各声道",
+      "observable": "峰值波形桶",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "inspect",
+        "measure"
+      ],
+      "source_anchors": [
+        "loopsill/waveform.py",
+        "loopsill/web/wave.js"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/waveform.py",
+          "loopsill/web/wave.js"
+        ],
+        "functions": [
+          "waveform",
+          "envelope",
+          "drawWave"
+        ]
+      }
+    },
+    {
+      "id": "S1-store",
+      "task_type": "泛Agent需求",
+      "capability_family": "素材与封存索引",
+      "subject": "素材与封存索引",
+      "state": "工作目录重开，从两种演示素材和真实产物提取可携带的交接证据",
+      "invariant": "媒体字节和稿号索引都落在同一工位目录的 SQLite 库内",
+      "observable": "重启打开旧稿及环带",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "ingest",
+        "save",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/store.py",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/store.py",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "connect",
+          "handoff",
+          "_read_source"
+        ]
+      }
+    },
+    {
+      "id": "S2-clock",
+      "task_type": "代码重构",
+      "capability_family": "有理画格与样本时钟",
+      "subject": "有理画格与样本时钟",
+      "state": "非整数帧率或采样率，在现有调用路径维持可观察语义的前提下评估职责归属",
+      "invariant": "样本边界由绝对画格和有理速率推导，来源偏移不进入输出时钟",
+      "observable": "视频画格与音频边界表",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "preview",
+        "rehearse"
+      ],
+      "source_anchors": [
+        "loopsill/clock.py",
+        "loopsill/plan.py",
+        "loopsill/repetition.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/clock.py",
+          "loopsill/plan.py",
+          "loopsill/repetition.py"
+        ],
+        "functions": [
+          "boundaries",
+          "make_plan",
+          "repeat_samples"
+        ]
+      }
+    },
+    {
+      "id": "S2-container",
+      "task_type": "代码重构",
+      "capability_family": "Y4M画面与PCM拾音",
+      "subject": "Y4M画面与PCM拾音",
+      "state": "配对前容器就绪，在现有调用路径维持可观察语义的前提下评估职责归属",
+      "invariant": "画面和拾音分别解析，再由有序载荷摘要确定配对身份",
+      "observable": "登记结果或格式错误",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "ingest"
+      ],
+      "source_anchors": [
+        "loopsill/source.py",
+        "loopsill/y4m.py",
+        "loopsill/pcm.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/source.py",
+          "loopsill/y4m.py",
+          "loopsill/pcm.py"
+        ],
+        "functions": [
+          "decode_capture",
+          "parse_y4m",
+          "parse_wav"
+        ]
+      }
+    },
+    {
+      "id": "S2-offset",
+      "task_type": "代码重构",
+      "capability_family": "拾音对齐",
+      "subject": "拾音对齐",
+      "state": "有符号样本偏移，在现有调用路径维持可观察语义的前提下评估职责归属",
+      "invariant": "有符号样本偏移同时改变首末拾音覆盖",
+      "observable": "测量时的边界和可用区间",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "inspect"
+      ],
+      "source_anchors": [
+        "loopsill/selection.py",
+        "loopsill/clock.py",
+        "loopsill/metrics.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/selection.py",
+          "loopsill/clock.py",
+          "loopsill/metrics.py"
+        ],
+        "functions": [
+          "interpret",
+          "sample",
+          "measure"
+        ]
+      }
+    },
+    {
+      "id": "S2-picture",
+      "task_type": "代码重构",
+      "capability_family": "画面接点",
+      "subject": "画面接点",
+      "state": "亮色空间取样，在现有调用路径维持可观察语义的前提下评估职责归属",
+      "invariant": "亮度差和显示像素分别从 YUV 数据取得",
+      "observable": "接点邻帧及其差分值",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/picture.py",
+        "loopsill/metrics.py",
+        "loopsill/raster.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/picture.py",
+          "loopsill/metrics.py",
+          "loopsill/raster.py"
+        ],
+        "functions": [
+          "luma_difference",
+          "boundary",
+          "frame_png"
+        ]
+      }
+    },
+    {
+      "id": "S2-sound",
+      "task_type": "代码重构",
+      "capability_family": "声道接点",
+      "subject": "声道接点",
+      "state": "双声道边界，在现有调用路径维持可观察语义的前提下评估职责归属",
+      "invariant": "双声道保留独立的跳变和窗口均方根读数",
+      "observable": "各声道接点误差",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/metrics.py",
+        "loopsill/pcm.py",
+        "loopsill/sound.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/metrics.py",
+          "loopsill/pcm.py",
+          "loopsill/sound.py"
+        ],
+        "functions": [
+          "audio_edge",
+          "sample",
+          "render_sound"
+        ]
+      }
+    },
+    {
+      "id": "S2-scan",
+      "task_type": "代码重构",
+      "capability_family": "接缝候选",
+      "subject": "接缝候选",
+      "state": "固定跨度搜索，在现有调用路径维持可观察语义的前提下评估职责归属",
+      "invariant": "候选等长平移，丢弃不可用区间，按代价与移动量顺序取八项",
+      "observable": "排序及排除数",
+      "primary_mechanism": "ranking_reorder",
+      "workflow_ids": [
+        "scan"
+      ],
+      "source_anchors": [
+        "loopsill/search.py",
+        "loopsill/selection.py",
+        "loopsill/metrics.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/search.py",
+          "loopsill/selection.py",
+          "loopsill/metrics.py"
+        ],
+        "functions": [
+          "scan",
+          "interpret",
+          "measure"
+        ]
+      }
+    },
+    {
+      "id": "S2-proof",
+      "task_type": "代码重构",
+      "capability_family": "声画预演",
+      "subject": "声画预演",
+      "state": "生成单圈前后，在现有调用路径维持可观察语义的前提下评估职责归属",
+      "invariant": "同一计划决定画格序列、音频长度及生效交叠位置",
+      "observable": "跨缝试听界面与取帧序列",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "preview",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/preview.py",
+        "loopsill/plan.py",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/preview.py",
+          "loopsill/plan.py",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "compile_preview",
+          "make_plan",
+          "preview_info"
+        ]
+      }
+    },
+    {
+      "id": "S2-overlap",
+      "task_type": "代码重构",
+      "capability_family": "交叠接点",
+      "subject": "交叠接点",
+      "state": "首尾交叠渲染，在现有调用路径维持可观察语义的前提下评估职责归属",
+      "invariant": "直通格先输出，尾头混合格收束整圈，画面格混合和音频样本混合分开计算",
+      "observable": "首个直通画格与末尾混合画格",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "preview",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/plan.py",
+        "loopsill/sound.py",
+        "loopsill/picture.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/plan.py",
+          "loopsill/sound.py",
+          "loopsill/picture.py"
+        ],
+        "functions": [
+          "make_plan",
+          "render_sound",
+          "render_picture"
+        ]
+      }
+    },
+    {
+      "id": "S2-draft",
+      "task_type": "代码重构",
+      "capability_family": "接缝稿修订",
+      "subject": "接缝稿修订",
+      "state": "并行改稿，在现有调用路径维持可观察语义的前提下评估职责归属",
+      "invariant": "追加稿号受预期最新稿约束，历史稿固定保留原选区和偏移",
+      "observable": "历史修订与冲突响应",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "save",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/store.py",
+        "loopsill/workbench.py",
+        "loopsill/web/history.js"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/store.py",
+          "loopsill/workbench.py",
+          "loopsill/web/history.js"
+        ],
+        "functions": [
+          "save",
+          "save",
+          "showHistory"
+        ]
+      }
+    },
+    {
+      "id": "S2-bundle",
+      "task_type": "代码重构",
+      "capability_family": "放映交付环带",
+      "subject": "放映交付环带",
+      "state": "封存及下载，在现有调用路径维持可观察语义的前提下评估职责归属",
+      "invariant": "按已保存稿号封存媒体、来源与摘要，重复封存复用同一结果",
+      "observable": "ZIP、共同时间表与摘要",
+      "primary_mechanism": "export_freeze",
+      "workflow_ids": [
+        "freeze",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/handoff.py",
+        "loopsill/workbench.py",
+        "loopsill/store.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/handoff.py",
+          "loopsill/workbench.py",
+          "loopsill/store.py"
+        ],
+        "functions": [
+          "make_handoff",
+          "freeze",
+          "put_handoff"
+        ]
+      }
+    },
+    {
+      "id": "S2-verify",
+      "task_type": "代码重构",
+      "capability_family": "交付核验",
+      "subject": "交付核验",
+      "state": "离线接收，在现有调用路径维持可观察语义的前提下评估职责归属",
+      "invariant": "封包成员摘要与解码后的尺寸、时钟及接缝事实须分别核对",
+      "observable": "离线验收输出",
+      "primary_mechanism": "lineage",
+      "workflow_ids": [
+        "verify",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/verify.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/verify.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "verify_handoff",
+          "verify_facts",
+          "open_handoff"
+        ]
+      }
+    },
+    {
+      "id": "S2-repeat",
+      "task_type": "代码重构",
+      "capability_family": "多圈排练",
+      "subject": "多圈排练",
+      "state": "重复成片，在现有调用路径维持可观察语义的前提下评估职责归属",
+      "invariant": "同一单圈可对应多个绝对圈宽，输出大小在物化前受限",
+      "observable": "按圈样本观察点",
+      "primary_mechanism": "capacity",
+      "workflow_ids": [
+        "rehearse"
+      ],
+      "source_anchors": [
+        "loopsill/repetition.py",
+        "loopsill/sound.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/repetition.py",
+          "loopsill/sound.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "repeat_samples",
+          "sample_from_span",
+          "rehearse"
+        ]
+      }
+    },
+    {
+      "id": "S2-preview",
+      "task_type": "代码重构",
+      "capability_family": "试听播放头",
+      "subject": "试听播放头",
+      "state": "播放、跳转和停下，在现有调用路径维持可观察语义的前提下评估职责归属",
+      "invariant": "音频缓冲采样时钟驱動畫格索引，抽页只供画面展示",
+      "observable": "预演画布和圈位",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/web/audition.js",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/web/audition.js",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "frameAt",
+          "currentPosition",
+          "preview_sheet"
+        ]
+      }
+    },
+    {
+      "id": "S2-wave",
+      "task_type": "代码重构",
+      "capability_family": "源声道波形",
+      "subject": "源声道波形",
+      "state": "候选位置检查，在现有调用路径维持可观察语义的前提下评估职责归属",
+      "invariant": "源拾音峰值按所选样本区间分别聚合各声道",
+      "observable": "峰值波形桶",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "inspect",
+        "measure"
+      ],
+      "source_anchors": [
+        "loopsill/waveform.py",
+        "loopsill/web/wave.js"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/waveform.py",
+          "loopsill/web/wave.js"
+        ],
+        "functions": [
+          "waveform",
+          "envelope",
+          "drawWave"
+        ]
+      }
+    },
+    {
+      "id": "S2-store",
+      "task_type": "代码重构",
+      "capability_family": "素材与封存索引",
+      "subject": "素材与封存索引",
+      "state": "工作目录重开，在现有调用路径维持可观察语义的前提下评估职责归属",
+      "invariant": "媒体字节和稿号索引都落在同一工位目录的 SQLite 库内",
+      "observable": "重启打开旧稿及环带",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "ingest",
+        "save",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/store.py",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/store.py",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "connect",
+          "handoff",
+          "_read_source"
+        ]
+      }
+    },
+    {
+      "id": "S3-clock",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "有理画格与样本时钟",
+      "subject": "有理画格与样本时钟",
+      "state": "非整数帧率或采样率，比较已存在产物跨工具或读写边界的可复用事实",
+      "invariant": "样本边界由绝对画格和有理速率推导，来源偏移不进入输出时钟",
+      "observable": "视频画格与音频边界表",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "preview",
+        "rehearse"
+      ],
+      "source_anchors": [
+        "loopsill/clock.py",
+        "loopsill/plan.py",
+        "loopsill/repetition.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/clock.py",
+          "loopsill/plan.py",
+          "loopsill/repetition.py"
+        ],
+        "functions": [
+          "boundaries",
+          "make_plan",
+          "repeat_samples"
+        ]
+      }
+    },
+    {
+      "id": "S3-container",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "Y4M画面与PCM拾音",
+      "subject": "Y4M画面与PCM拾音",
+      "state": "配对前容器就绪，比较已存在产物跨工具或读写边界的可复用事实",
+      "invariant": "画面和拾音分别解析，再由有序载荷摘要确定配对身份",
+      "observable": "登记结果或格式错误",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "ingest"
+      ],
+      "source_anchors": [
+        "loopsill/source.py",
+        "loopsill/y4m.py",
+        "loopsill/pcm.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/source.py",
+          "loopsill/y4m.py",
+          "loopsill/pcm.py"
+        ],
+        "functions": [
+          "decode_capture",
+          "parse_y4m",
+          "parse_wav"
+        ]
+      }
+    },
+    {
+      "id": "S3-offset",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "拾音对齐",
+      "subject": "拾音对齐",
+      "state": "有符号样本偏移，比较已存在产物跨工具或读写边界的可复用事实",
+      "invariant": "有符号样本偏移同时改变首末拾音覆盖",
+      "observable": "测量时的边界和可用区间",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "inspect"
+      ],
+      "source_anchors": [
+        "loopsill/selection.py",
+        "loopsill/clock.py",
+        "loopsill/metrics.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/selection.py",
+          "loopsill/clock.py",
+          "loopsill/metrics.py"
+        ],
+        "functions": [
+          "interpret",
+          "sample",
+          "measure"
+        ]
+      }
+    },
+    {
+      "id": "S3-picture",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "画面接点",
+      "subject": "画面接点",
+      "state": "亮色空间取样，比较已存在产物跨工具或读写边界的可复用事实",
+      "invariant": "亮度差和显示像素分别从 YUV 数据取得",
+      "observable": "接点邻帧及其差分值",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/picture.py",
+        "loopsill/metrics.py",
+        "loopsill/raster.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/picture.py",
+          "loopsill/metrics.py",
+          "loopsill/raster.py"
+        ],
+        "functions": [
+          "luma_difference",
+          "boundary",
+          "frame_png"
+        ]
+      }
+    },
+    {
+      "id": "S3-sound",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "声道接点",
+      "subject": "声道接点",
+      "state": "双声道边界，比较已存在产物跨工具或读写边界的可复用事实",
+      "invariant": "双声道保留独立的跳变和窗口均方根读数",
+      "observable": "各声道接点误差",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/metrics.py",
+        "loopsill/pcm.py",
+        "loopsill/sound.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/metrics.py",
+          "loopsill/pcm.py",
+          "loopsill/sound.py"
+        ],
+        "functions": [
+          "audio_edge",
+          "sample",
+          "render_sound"
+        ]
+      }
+    },
+    {
+      "id": "S3-scan",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "接缝候选",
+      "subject": "接缝候选",
+      "state": "固定跨度搜索，比较已存在产物跨工具或读写边界的可复用事实",
+      "invariant": "候选等长平移，丢弃不可用区间，按代价与移动量顺序取八项",
+      "observable": "排序及排除数",
+      "primary_mechanism": "ranking_reorder",
+      "workflow_ids": [
+        "scan"
+      ],
+      "source_anchors": [
+        "loopsill/search.py",
+        "loopsill/selection.py",
+        "loopsill/metrics.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/search.py",
+          "loopsill/selection.py",
+          "loopsill/metrics.py"
+        ],
+        "functions": [
+          "scan",
+          "interpret",
+          "measure"
+        ]
+      }
+    },
+    {
+      "id": "S3-proof",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "声画预演",
+      "subject": "声画预演",
+      "state": "生成单圈前后，比较已存在产物跨工具或读写边界的可复用事实",
+      "invariant": "同一计划决定画格序列、音频长度及生效交叠位置",
+      "observable": "跨缝试听界面与取帧序列",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "preview",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/preview.py",
+        "loopsill/plan.py",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/preview.py",
+          "loopsill/plan.py",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "compile_preview",
+          "make_plan",
+          "preview_info"
+        ]
+      }
+    },
+    {
+      "id": "S3-overlap",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "交叠接点",
+      "subject": "交叠接点",
+      "state": "首尾交叠渲染，比较已存在产物跨工具或读写边界的可复用事实",
+      "invariant": "直通格先输出，尾头混合格收束整圈，画面格混合和音频样本混合分开计算",
+      "observable": "首个直通画格与末尾混合画格",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "preview",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/plan.py",
+        "loopsill/sound.py",
+        "loopsill/picture.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/plan.py",
+          "loopsill/sound.py",
+          "loopsill/picture.py"
+        ],
+        "functions": [
+          "make_plan",
+          "render_sound",
+          "render_picture"
+        ]
+      }
+    },
+    {
+      "id": "S3-draft",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "接缝稿修订",
+      "subject": "接缝稿修订",
+      "state": "并行改稿，比较已存在产物跨工具或读写边界的可复用事实",
+      "invariant": "追加稿号受预期最新稿约束，历史稿固定保留原选区和偏移",
+      "observable": "历史修订与冲突响应",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "save",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/store.py",
+        "loopsill/workbench.py",
+        "loopsill/web/history.js"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/store.py",
+          "loopsill/workbench.py",
+          "loopsill/web/history.js"
+        ],
+        "functions": [
+          "save",
+          "save",
+          "showHistory"
+        ]
+      }
+    },
+    {
+      "id": "S3-bundle",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "放映交付环带",
+      "subject": "放映交付环带",
+      "state": "封存及下载，比较已存在产物跨工具或读写边界的可复用事实",
+      "invariant": "按已保存稿号封存媒体、来源与摘要，重复封存复用同一结果",
+      "observable": "ZIP、共同时间表与摘要",
+      "primary_mechanism": "export_freeze",
+      "workflow_ids": [
+        "freeze",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/handoff.py",
+        "loopsill/workbench.py",
+        "loopsill/store.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/handoff.py",
+          "loopsill/workbench.py",
+          "loopsill/store.py"
+        ],
+        "functions": [
+          "make_handoff",
+          "freeze",
+          "put_handoff"
+        ]
+      }
+    },
+    {
+      "id": "S3-verify",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "交付核验",
+      "subject": "交付核验",
+      "state": "离线接收，比较已存在产物跨工具或读写边界的可复用事实",
+      "invariant": "封包成员摘要与解码后的尺寸、时钟及接缝事实须分别核对",
+      "observable": "离线验收输出",
+      "primary_mechanism": "lineage",
+      "workflow_ids": [
+        "verify",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/verify.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/verify.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "verify_handoff",
+          "verify_facts",
+          "open_handoff"
+        ]
+      }
+    },
+    {
+      "id": "S3-repeat",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "多圈排练",
+      "subject": "多圈排练",
+      "state": "重复成片，比较已存在产物跨工具或读写边界的可复用事实",
+      "invariant": "同一单圈可对应多个绝对圈宽，输出大小在物化前受限",
+      "observable": "按圈样本观察点",
+      "primary_mechanism": "capacity",
+      "workflow_ids": [
+        "rehearse"
+      ],
+      "source_anchors": [
+        "loopsill/repetition.py",
+        "loopsill/sound.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/repetition.py",
+          "loopsill/sound.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "repeat_samples",
+          "sample_from_span",
+          "rehearse"
+        ]
+      }
+    },
+    {
+      "id": "S3-preview",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "试听播放头",
+      "subject": "试听播放头",
+      "state": "播放、跳转和停下，比较已存在产物跨工具或读写边界的可复用事实",
+      "invariant": "音频缓冲采样时钟驱動畫格索引，抽页只供画面展示",
+      "observable": "预演画布和圈位",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/web/audition.js",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/web/audition.js",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "frameAt",
+          "currentPosition",
+          "preview_sheet"
+        ]
+      }
+    },
+    {
+      "id": "S3-wave",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "源声道波形",
+      "subject": "源声道波形",
+      "state": "候选位置检查，比较已存在产物跨工具或读写边界的可复用事实",
+      "invariant": "源拾音峰值按所选样本区间分别聚合各声道",
+      "observable": "峰值波形桶",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "inspect",
+        "measure"
+      ],
+      "source_anchors": [
+        "loopsill/waveform.py",
+        "loopsill/web/wave.js"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/waveform.py",
+          "loopsill/web/wave.js"
+        ],
+        "functions": [
+          "waveform",
+          "envelope",
+          "drawWave"
+        ]
+      }
+    },
+    {
+      "id": "S3-store",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "素材与封存索引",
+      "subject": "素材与封存索引",
+      "state": "工作目录重开，比较已存在产物跨工具或读写边界的可复用事实",
+      "invariant": "媒体字节和稿号索引都落在同一工位目录的 SQLite 库内",
+      "observable": "重启打开旧稿及环带",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "ingest",
+        "save",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/store.py",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/store.py",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "connect",
+          "handoff",
+          "_read_source"
+        ]
+      }
+    },
+    {
+      "id": "S4-clock",
+      "task_type": "质量保障",
+      "capability_family": "有理画格与样本时钟",
+      "subject": "有理画格与样本时钟",
+      "state": "非整数帧率或采样率，用对照输入在正式入口核验这项可观察行为",
+      "invariant": "样本边界由绝对画格和有理速率推导，来源偏移不进入输出时钟",
+      "observable": "视频画格与音频边界表",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "preview",
+        "rehearse"
+      ],
+      "source_anchors": [
+        "loopsill/clock.py",
+        "loopsill/plan.py",
+        "loopsill/repetition.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/clock.py",
+          "loopsill/plan.py",
+          "loopsill/repetition.py"
+        ],
+        "functions": [
+          "boundaries",
+          "make_plan",
+          "repeat_samples"
+        ]
+      }
+    },
+    {
+      "id": "S4-container",
+      "task_type": "质量保障",
+      "capability_family": "Y4M画面与PCM拾音",
+      "subject": "Y4M画面与PCM拾音",
+      "state": "配对前容器就绪，用对照输入在正式入口核验这项可观察行为",
+      "invariant": "画面和拾音分别解析，再由有序载荷摘要确定配对身份",
+      "observable": "登记结果或格式错误",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "ingest"
+      ],
+      "source_anchors": [
+        "loopsill/source.py",
+        "loopsill/y4m.py",
+        "loopsill/pcm.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/source.py",
+          "loopsill/y4m.py",
+          "loopsill/pcm.py"
+        ],
+        "functions": [
+          "decode_capture",
+          "parse_y4m",
+          "parse_wav"
+        ]
+      }
+    },
+    {
+      "id": "S4-offset",
+      "task_type": "质量保障",
+      "capability_family": "拾音对齐",
+      "subject": "拾音对齐",
+      "state": "有符号样本偏移，用对照输入在正式入口核验这项可观察行为",
+      "invariant": "有符号样本偏移同时改变首末拾音覆盖",
+      "observable": "测量时的边界和可用区间",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "inspect"
+      ],
+      "source_anchors": [
+        "loopsill/selection.py",
+        "loopsill/clock.py",
+        "loopsill/metrics.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/selection.py",
+          "loopsill/clock.py",
+          "loopsill/metrics.py"
+        ],
+        "functions": [
+          "interpret",
+          "sample",
+          "measure"
+        ]
+      }
+    },
+    {
+      "id": "S4-picture",
+      "task_type": "质量保障",
+      "capability_family": "画面接点",
+      "subject": "画面接点",
+      "state": "亮色空间取样，用对照输入在正式入口核验这项可观察行为",
+      "invariant": "亮度差和显示像素分别从 YUV 数据取得",
+      "observable": "接点邻帧及其差分值",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/picture.py",
+        "loopsill/metrics.py",
+        "loopsill/raster.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/picture.py",
+          "loopsill/metrics.py",
+          "loopsill/raster.py"
+        ],
+        "functions": [
+          "luma_difference",
+          "boundary",
+          "frame_png"
+        ]
+      }
+    },
+    {
+      "id": "S4-sound",
+      "task_type": "质量保障",
+      "capability_family": "声道接点",
+      "subject": "声道接点",
+      "state": "双声道边界，用对照输入在正式入口核验这项可观察行为",
+      "invariant": "双声道保留独立的跳变和窗口均方根读数",
+      "observable": "各声道接点误差",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/metrics.py",
+        "loopsill/pcm.py",
+        "loopsill/sound.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/metrics.py",
+          "loopsill/pcm.py",
+          "loopsill/sound.py"
+        ],
+        "functions": [
+          "audio_edge",
+          "sample",
+          "render_sound"
+        ]
+      }
+    },
+    {
+      "id": "S4-scan",
+      "task_type": "质量保障",
+      "capability_family": "接缝候选",
+      "subject": "接缝候选",
+      "state": "固定跨度搜索，用对照输入在正式入口核验这项可观察行为",
+      "invariant": "候选等长平移，丢弃不可用区间，按代价与移动量顺序取八项",
+      "observable": "排序及排除数",
+      "primary_mechanism": "ranking_reorder",
+      "workflow_ids": [
+        "scan"
+      ],
+      "source_anchors": [
+        "loopsill/search.py",
+        "loopsill/selection.py",
+        "loopsill/metrics.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/search.py",
+          "loopsill/selection.py",
+          "loopsill/metrics.py"
+        ],
+        "functions": [
+          "scan",
+          "interpret",
+          "measure"
+        ]
+      }
+    },
+    {
+      "id": "S4-proof",
+      "task_type": "质量保障",
+      "capability_family": "声画预演",
+      "subject": "声画预演",
+      "state": "生成单圈前后，用对照输入在正式入口核验这项可观察行为",
+      "invariant": "同一计划决定画格序列、音频长度及生效交叠位置",
+      "observable": "跨缝试听界面与取帧序列",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "preview",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/preview.py",
+        "loopsill/plan.py",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/preview.py",
+          "loopsill/plan.py",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "compile_preview",
+          "make_plan",
+          "preview_info"
+        ]
+      }
+    },
+    {
+      "id": "S4-overlap",
+      "task_type": "质量保障",
+      "capability_family": "交叠接点",
+      "subject": "交叠接点",
+      "state": "首尾交叠渲染，用对照输入在正式入口核验这项可观察行为",
+      "invariant": "直通格先输出，尾头混合格收束整圈，画面格混合和音频样本混合分开计算",
+      "observable": "首个直通画格与末尾混合画格",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "preview",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/plan.py",
+        "loopsill/sound.py",
+        "loopsill/picture.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/plan.py",
+          "loopsill/sound.py",
+          "loopsill/picture.py"
+        ],
+        "functions": [
+          "make_plan",
+          "render_sound",
+          "render_picture"
+        ]
+      }
+    },
+    {
+      "id": "S4-draft",
+      "task_type": "质量保障",
+      "capability_family": "接缝稿修订",
+      "subject": "接缝稿修订",
+      "state": "并行改稿，用对照输入在正式入口核验这项可观察行为",
+      "invariant": "追加稿号受预期最新稿约束，历史稿固定保留原选区和偏移",
+      "observable": "历史修订与冲突响应",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "save",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/store.py",
+        "loopsill/workbench.py",
+        "loopsill/web/history.js"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/store.py",
+          "loopsill/workbench.py",
+          "loopsill/web/history.js"
+        ],
+        "functions": [
+          "save",
+          "save",
+          "showHistory"
+        ]
+      }
+    },
+    {
+      "id": "S4-bundle",
+      "task_type": "质量保障",
+      "capability_family": "放映交付环带",
+      "subject": "放映交付环带",
+      "state": "封存及下载，用对照输入在正式入口核验这项可观察行为",
+      "invariant": "按已保存稿号封存媒体、来源与摘要，重复封存复用同一结果",
+      "observable": "ZIP、共同时间表与摘要",
+      "primary_mechanism": "export_freeze",
+      "workflow_ids": [
+        "freeze",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/handoff.py",
+        "loopsill/workbench.py",
+        "loopsill/store.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/handoff.py",
+          "loopsill/workbench.py",
+          "loopsill/store.py"
+        ],
+        "functions": [
+          "make_handoff",
+          "freeze",
+          "put_handoff"
+        ]
+      }
+    },
+    {
+      "id": "S4-verify",
+      "task_type": "质量保障",
+      "capability_family": "交付核验",
+      "subject": "交付核验",
+      "state": "离线接收，用对照输入在正式入口核验这项可观察行为",
+      "invariant": "封包成员摘要与解码后的尺寸、时钟及接缝事实须分别核对",
+      "observable": "离线验收输出",
+      "primary_mechanism": "lineage",
+      "workflow_ids": [
+        "verify",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/verify.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/verify.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "verify_handoff",
+          "verify_facts",
+          "open_handoff"
+        ]
+      }
+    },
+    {
+      "id": "S4-repeat",
+      "task_type": "质量保障",
+      "capability_family": "多圈排练",
+      "subject": "多圈排练",
+      "state": "重复成片，用对照输入在正式入口核验这项可观察行为",
+      "invariant": "同一单圈可对应多个绝对圈宽，输出大小在物化前受限",
+      "observable": "按圈样本观察点",
+      "primary_mechanism": "capacity",
+      "workflow_ids": [
+        "rehearse"
+      ],
+      "source_anchors": [
+        "loopsill/repetition.py",
+        "loopsill/sound.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/repetition.py",
+          "loopsill/sound.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "repeat_samples",
+          "sample_from_span",
+          "rehearse"
+        ]
+      }
+    },
+    {
+      "id": "S4-preview",
+      "task_type": "质量保障",
+      "capability_family": "试听播放头",
+      "subject": "试听播放头",
+      "state": "播放、跳转和停下，用对照输入在正式入口核验这项可观察行为",
+      "invariant": "音频缓冲采样时钟驱動畫格索引，抽页只供画面展示",
+      "observable": "预演画布和圈位",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/web/audition.js",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/web/audition.js",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "frameAt",
+          "currentPosition",
+          "preview_sheet"
+        ]
+      }
+    },
+    {
+      "id": "S4-wave",
+      "task_type": "质量保障",
+      "capability_family": "源声道波形",
+      "subject": "源声道波形",
+      "state": "候选位置检查，用对照输入在正式入口核验这项可观察行为",
+      "invariant": "源拾音峰值按所选样本区间分别聚合各声道",
+      "observable": "峰值波形桶",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "inspect",
+        "measure"
+      ],
+      "source_anchors": [
+        "loopsill/waveform.py",
+        "loopsill/web/wave.js"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/waveform.py",
+          "loopsill/web/wave.js"
+        ],
+        "functions": [
+          "waveform",
+          "envelope",
+          "drawWave"
+        ]
+      }
+    },
+    {
+      "id": "S4-store",
+      "task_type": "质量保障",
+      "capability_family": "素材与封存索引",
+      "subject": "素材与封存索引",
+      "state": "工作目录重开，用对照输入在正式入口核验这项可观察行为",
+      "invariant": "媒体字节和稿号索引都落在同一工位目录的 SQLite 库内",
+      "observable": "重启打开旧稿及环带",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "ingest",
+        "save",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/store.py",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/store.py",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "connect",
+          "handoff",
+          "_read_source"
+        ]
+      }
+    },
+    {
+      "id": "S5-clock",
+      "task_type": "项目维护",
+      "capability_family": "有理画格与样本时钟",
+      "subject": "有理画格与样本时钟",
+      "state": "非整数帧率或采样率，核对会写入操作资料和接收约定的边界口径",
+      "invariant": "样本边界由绝对画格和有理速率推导，来源偏移不进入输出时钟",
+      "observable": "视频画格与音频边界表",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "preview",
+        "rehearse"
+      ],
+      "source_anchors": [
+        "loopsill/clock.py",
+        "loopsill/plan.py",
+        "loopsill/repetition.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/clock.py",
+          "loopsill/plan.py",
+          "loopsill/repetition.py"
+        ],
+        "functions": [
+          "boundaries",
+          "make_plan",
+          "repeat_samples"
+        ]
+      }
+    },
+    {
+      "id": "S5-container",
+      "task_type": "项目维护",
+      "capability_family": "Y4M画面与PCM拾音",
+      "subject": "Y4M画面与PCM拾音",
+      "state": "配对前容器就绪，核对会写入操作资料和接收约定的边界口径",
+      "invariant": "画面和拾音分别解析，再由有序载荷摘要确定配对身份",
+      "observable": "登记结果或格式错误",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "ingest"
+      ],
+      "source_anchors": [
+        "loopsill/source.py",
+        "loopsill/y4m.py",
+        "loopsill/pcm.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/source.py",
+          "loopsill/y4m.py",
+          "loopsill/pcm.py"
+        ],
+        "functions": [
+          "decode_capture",
+          "parse_y4m",
+          "parse_wav"
+        ]
+      }
+    },
+    {
+      "id": "S5-offset",
+      "task_type": "项目维护",
+      "capability_family": "拾音对齐",
+      "subject": "拾音对齐",
+      "state": "有符号样本偏移，核对会写入操作资料和接收约定的边界口径",
+      "invariant": "有符号样本偏移同时改变首末拾音覆盖",
+      "observable": "测量时的边界和可用区间",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "inspect"
+      ],
+      "source_anchors": [
+        "loopsill/selection.py",
+        "loopsill/clock.py",
+        "loopsill/metrics.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/selection.py",
+          "loopsill/clock.py",
+          "loopsill/metrics.py"
+        ],
+        "functions": [
+          "interpret",
+          "sample",
+          "measure"
+        ]
+      }
+    },
+    {
+      "id": "S5-picture",
+      "task_type": "项目维护",
+      "capability_family": "画面接点",
+      "subject": "画面接点",
+      "state": "亮色空间取样，核对会写入操作资料和接收约定的边界口径",
+      "invariant": "亮度差和显示像素分别从 YUV 数据取得",
+      "observable": "接点邻帧及其差分值",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/picture.py",
+        "loopsill/metrics.py",
+        "loopsill/raster.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/picture.py",
+          "loopsill/metrics.py",
+          "loopsill/raster.py"
+        ],
+        "functions": [
+          "luma_difference",
+          "boundary",
+          "frame_png"
+        ]
+      }
+    },
+    {
+      "id": "S5-sound",
+      "task_type": "项目维护",
+      "capability_family": "声道接点",
+      "subject": "声道接点",
+      "state": "双声道边界，核对会写入操作资料和接收约定的边界口径",
+      "invariant": "双声道保留独立的跳变和窗口均方根读数",
+      "observable": "各声道接点误差",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/metrics.py",
+        "loopsill/pcm.py",
+        "loopsill/sound.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/metrics.py",
+          "loopsill/pcm.py",
+          "loopsill/sound.py"
+        ],
+        "functions": [
+          "audio_edge",
+          "sample",
+          "render_sound"
+        ]
+      }
+    },
+    {
+      "id": "S5-scan",
+      "task_type": "项目维护",
+      "capability_family": "接缝候选",
+      "subject": "接缝候选",
+      "state": "固定跨度搜索，核对会写入操作资料和接收约定的边界口径",
+      "invariant": "候选等长平移，丢弃不可用区间，按代价与移动量顺序取八项",
+      "observable": "排序及排除数",
+      "primary_mechanism": "ranking_reorder",
+      "workflow_ids": [
+        "scan"
+      ],
+      "source_anchors": [
+        "loopsill/search.py",
+        "loopsill/selection.py",
+        "loopsill/metrics.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/search.py",
+          "loopsill/selection.py",
+          "loopsill/metrics.py"
+        ],
+        "functions": [
+          "scan",
+          "interpret",
+          "measure"
+        ]
+      }
+    },
+    {
+      "id": "S5-proof",
+      "task_type": "项目维护",
+      "capability_family": "声画预演",
+      "subject": "声画预演",
+      "state": "生成单圈前后，核对会写入操作资料和接收约定的边界口径",
+      "invariant": "同一计划决定画格序列、音频长度及生效交叠位置",
+      "observable": "跨缝试听界面与取帧序列",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "preview",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/preview.py",
+        "loopsill/plan.py",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/preview.py",
+          "loopsill/plan.py",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "compile_preview",
+          "make_plan",
+          "preview_info"
+        ]
+      }
+    },
+    {
+      "id": "S5-overlap",
+      "task_type": "项目维护",
+      "capability_family": "交叠接点",
+      "subject": "交叠接点",
+      "state": "首尾交叠渲染，核对会写入操作资料和接收约定的边界口径",
+      "invariant": "直通格先输出，尾头混合格收束整圈，画面格混合和音频样本混合分开计算",
+      "observable": "首个直通画格与末尾混合画格",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "preview",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/plan.py",
+        "loopsill/sound.py",
+        "loopsill/picture.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/plan.py",
+          "loopsill/sound.py",
+          "loopsill/picture.py"
+        ],
+        "functions": [
+          "make_plan",
+          "render_sound",
+          "render_picture"
+        ]
+      }
+    },
+    {
+      "id": "S5-draft",
+      "task_type": "项目维护",
+      "capability_family": "接缝稿修订",
+      "subject": "接缝稿修订",
+      "state": "并行改稿，核对会写入操作资料和接收约定的边界口径",
+      "invariant": "追加稿号受预期最新稿约束，历史稿固定保留原选区和偏移",
+      "observable": "历史修订与冲突响应",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "save",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/store.py",
+        "loopsill/workbench.py",
+        "loopsill/web/history.js"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/store.py",
+          "loopsill/workbench.py",
+          "loopsill/web/history.js"
+        ],
+        "functions": [
+          "save",
+          "save",
+          "showHistory"
+        ]
+      }
+    },
+    {
+      "id": "S5-bundle",
+      "task_type": "项目维护",
+      "capability_family": "放映交付环带",
+      "subject": "放映交付环带",
+      "state": "封存及下载，核对会写入操作资料和接收约定的边界口径",
+      "invariant": "按已保存稿号封存媒体、来源与摘要，重复封存复用同一结果",
+      "observable": "ZIP、共同时间表与摘要",
+      "primary_mechanism": "export_freeze",
+      "workflow_ids": [
+        "freeze",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/handoff.py",
+        "loopsill/workbench.py",
+        "loopsill/store.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/handoff.py",
+          "loopsill/workbench.py",
+          "loopsill/store.py"
+        ],
+        "functions": [
+          "make_handoff",
+          "freeze",
+          "put_handoff"
+        ]
+      }
+    },
+    {
+      "id": "S5-verify",
+      "task_type": "项目维护",
+      "capability_family": "交付核验",
+      "subject": "交付核验",
+      "state": "离线接收，核对会写入操作资料和接收约定的边界口径",
+      "invariant": "封包成员摘要与解码后的尺寸、时钟及接缝事实须分别核对",
+      "observable": "离线验收输出",
+      "primary_mechanism": "lineage",
+      "workflow_ids": [
+        "verify",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/verify.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/verify.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "verify_handoff",
+          "verify_facts",
+          "open_handoff"
+        ]
+      }
+    },
+    {
+      "id": "S5-repeat",
+      "task_type": "项目维护",
+      "capability_family": "多圈排练",
+      "subject": "多圈排练",
+      "state": "重复成片，核对会写入操作资料和接收约定的边界口径",
+      "invariant": "同一单圈可对应多个绝对圈宽，输出大小在物化前受限",
+      "observable": "按圈样本观察点",
+      "primary_mechanism": "capacity",
+      "workflow_ids": [
+        "rehearse"
+      ],
+      "source_anchors": [
+        "loopsill/repetition.py",
+        "loopsill/sound.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/repetition.py",
+          "loopsill/sound.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "repeat_samples",
+          "sample_from_span",
+          "rehearse"
+        ]
+      }
+    },
+    {
+      "id": "S5-preview",
+      "task_type": "项目维护",
+      "capability_family": "试听播放头",
+      "subject": "试听播放头",
+      "state": "播放、跳转和停下，核对会写入操作资料和接收约定的边界口径",
+      "invariant": "音频缓冲采样时钟驱動畫格索引，抽页只供画面展示",
+      "observable": "预演画布和圈位",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/web/audition.js",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/web/audition.js",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "frameAt",
+          "currentPosition",
+          "preview_sheet"
+        ]
+      }
+    },
+    {
+      "id": "S5-wave",
+      "task_type": "项目维护",
+      "capability_family": "源声道波形",
+      "subject": "源声道波形",
+      "state": "候选位置检查，核对会写入操作资料和接收约定的边界口径",
+      "invariant": "源拾音峰值按所选样本区间分别聚合各声道",
+      "observable": "峰值波形桶",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "inspect",
+        "measure"
+      ],
+      "source_anchors": [
+        "loopsill/waveform.py",
+        "loopsill/web/wave.js"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/waveform.py",
+          "loopsill/web/wave.js"
+        ],
+        "functions": [
+          "waveform",
+          "envelope",
+          "drawWave"
+        ]
+      }
+    },
+    {
+      "id": "S5-store",
+      "task_type": "项目维护",
+      "capability_family": "素材与封存索引",
+      "subject": "素材与封存索引",
+      "state": "工作目录重开，核对会写入操作资料和接收约定的边界口径",
+      "invariant": "媒体字节和稿号索引都落在同一工位目录的 SQLite 库内",
+      "observable": "重启打开旧稿及环带",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "ingest",
+        "save",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/store.py",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/store.py",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "connect",
+          "handoff",
+          "_read_source"
+        ]
+      }
+    },
+    {
+      "id": "S6-clock",
+      "task_type": "技术讨论",
+      "capability_family": "有理画格与样本时钟",
+      "subject": "有理画格与样本时钟",
+      "state": "非整数帧率或采样率，用现有工作流和结果约束比较可行改动路线",
+      "invariant": "样本边界由绝对画格和有理速率推导，来源偏移不进入输出时钟",
+      "observable": "视频画格与音频边界表",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "preview",
+        "rehearse"
+      ],
+      "source_anchors": [
+        "loopsill/clock.py",
+        "loopsill/plan.py",
+        "loopsill/repetition.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/clock.py",
+          "loopsill/plan.py",
+          "loopsill/repetition.py"
+        ],
+        "functions": [
+          "boundaries",
+          "make_plan",
+          "repeat_samples"
+        ]
+      }
+    },
+    {
+      "id": "S6-container",
+      "task_type": "技术讨论",
+      "capability_family": "Y4M画面与PCM拾音",
+      "subject": "Y4M画面与PCM拾音",
+      "state": "配对前容器就绪，用现有工作流和结果约束比较可行改动路线",
+      "invariant": "画面和拾音分别解析，再由有序载荷摘要确定配对身份",
+      "observable": "登记结果或格式错误",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "ingest"
+      ],
+      "source_anchors": [
+        "loopsill/source.py",
+        "loopsill/y4m.py",
+        "loopsill/pcm.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/source.py",
+          "loopsill/y4m.py",
+          "loopsill/pcm.py"
+        ],
+        "functions": [
+          "decode_capture",
+          "parse_y4m",
+          "parse_wav"
+        ]
+      }
+    },
+    {
+      "id": "S6-offset",
+      "task_type": "技术讨论",
+      "capability_family": "拾音对齐",
+      "subject": "拾音对齐",
+      "state": "有符号样本偏移，用现有工作流和结果约束比较可行改动路线",
+      "invariant": "有符号样本偏移同时改变首末拾音覆盖",
+      "observable": "测量时的边界和可用区间",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "inspect"
+      ],
+      "source_anchors": [
+        "loopsill/selection.py",
+        "loopsill/clock.py",
+        "loopsill/metrics.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/selection.py",
+          "loopsill/clock.py",
+          "loopsill/metrics.py"
+        ],
+        "functions": [
+          "interpret",
+          "sample",
+          "measure"
+        ]
+      }
+    },
+    {
+      "id": "S6-picture",
+      "task_type": "技术讨论",
+      "capability_family": "画面接点",
+      "subject": "画面接点",
+      "state": "亮色空间取样，用现有工作流和结果约束比较可行改动路线",
+      "invariant": "亮度差和显示像素分别从 YUV 数据取得",
+      "observable": "接点邻帧及其差分值",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/picture.py",
+        "loopsill/metrics.py",
+        "loopsill/raster.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/picture.py",
+          "loopsill/metrics.py",
+          "loopsill/raster.py"
+        ],
+        "functions": [
+          "luma_difference",
+          "boundary",
+          "frame_png"
+        ]
+      }
+    },
+    {
+      "id": "S6-sound",
+      "task_type": "技术讨论",
+      "capability_family": "声道接点",
+      "subject": "声道接点",
+      "state": "双声道边界，用现有工作流和结果约束比较可行改动路线",
+      "invariant": "双声道保留独立的跳变和窗口均方根读数",
+      "observable": "各声道接点误差",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/metrics.py",
+        "loopsill/pcm.py",
+        "loopsill/sound.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/metrics.py",
+          "loopsill/pcm.py",
+          "loopsill/sound.py"
+        ],
+        "functions": [
+          "audio_edge",
+          "sample",
+          "render_sound"
+        ]
+      }
+    },
+    {
+      "id": "S6-scan",
+      "task_type": "技术讨论",
+      "capability_family": "接缝候选",
+      "subject": "接缝候选",
+      "state": "固定跨度搜索，用现有工作流和结果约束比较可行改动路线",
+      "invariant": "候选等长平移，丢弃不可用区间，按代价与移动量顺序取八项",
+      "observable": "排序及排除数",
+      "primary_mechanism": "ranking_reorder",
+      "workflow_ids": [
+        "scan"
+      ],
+      "source_anchors": [
+        "loopsill/search.py",
+        "loopsill/selection.py",
+        "loopsill/metrics.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/search.py",
+          "loopsill/selection.py",
+          "loopsill/metrics.py"
+        ],
+        "functions": [
+          "scan",
+          "interpret",
+          "measure"
+        ]
+      }
+    },
+    {
+      "id": "S6-proof",
+      "task_type": "技术讨论",
+      "capability_family": "声画预演",
+      "subject": "声画预演",
+      "state": "生成单圈前后，用现有工作流和结果约束比较可行改动路线",
+      "invariant": "同一计划决定画格序列、音频长度及生效交叠位置",
+      "observable": "跨缝试听界面与取帧序列",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "preview",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/preview.py",
+        "loopsill/plan.py",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/preview.py",
+          "loopsill/plan.py",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "compile_preview",
+          "make_plan",
+          "preview_info"
+        ]
+      }
+    },
+    {
+      "id": "S6-overlap",
+      "task_type": "技术讨论",
+      "capability_family": "交叠接点",
+      "subject": "交叠接点",
+      "state": "首尾交叠渲染，用现有工作流和结果约束比较可行改动路线",
+      "invariant": "直通格先输出，尾头混合格收束整圈，画面格混合和音频样本混合分开计算",
+      "observable": "首个直通画格与末尾混合画格",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "preview",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/plan.py",
+        "loopsill/sound.py",
+        "loopsill/picture.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/plan.py",
+          "loopsill/sound.py",
+          "loopsill/picture.py"
+        ],
+        "functions": [
+          "make_plan",
+          "render_sound",
+          "render_picture"
+        ]
+      }
+    },
+    {
+      "id": "S6-draft",
+      "task_type": "技术讨论",
+      "capability_family": "接缝稿修订",
+      "subject": "接缝稿修订",
+      "state": "并行改稿，用现有工作流和结果约束比较可行改动路线",
+      "invariant": "追加稿号受预期最新稿约束，历史稿固定保留原选区和偏移",
+      "observable": "历史修订与冲突响应",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "save",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/store.py",
+        "loopsill/workbench.py",
+        "loopsill/web/history.js"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/store.py",
+          "loopsill/workbench.py",
+          "loopsill/web/history.js"
+        ],
+        "functions": [
+          "save",
+          "save",
+          "showHistory"
+        ]
+      }
+    },
+    {
+      "id": "S6-bundle",
+      "task_type": "技术讨论",
+      "capability_family": "放映交付环带",
+      "subject": "放映交付环带",
+      "state": "封存及下载，用现有工作流和结果约束比较可行改动路线",
+      "invariant": "按已保存稿号封存媒体、来源与摘要，重复封存复用同一结果",
+      "observable": "ZIP、共同时间表与摘要",
+      "primary_mechanism": "export_freeze",
+      "workflow_ids": [
+        "freeze",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/handoff.py",
+        "loopsill/workbench.py",
+        "loopsill/store.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/handoff.py",
+          "loopsill/workbench.py",
+          "loopsill/store.py"
+        ],
+        "functions": [
+          "make_handoff",
+          "freeze",
+          "put_handoff"
+        ]
+      }
+    },
+    {
+      "id": "S6-verify",
+      "task_type": "技术讨论",
+      "capability_family": "交付核验",
+      "subject": "交付核验",
+      "state": "离线接收，用现有工作流和结果约束比较可行改动路线",
+      "invariant": "封包成员摘要与解码后的尺寸、时钟及接缝事实须分别核对",
+      "observable": "离线验收输出",
+      "primary_mechanism": "lineage",
+      "workflow_ids": [
+        "verify",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/verify.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/verify.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "verify_handoff",
+          "verify_facts",
+          "open_handoff"
+        ]
+      }
+    },
+    {
+      "id": "S6-repeat",
+      "task_type": "技术讨论",
+      "capability_family": "多圈排练",
+      "subject": "多圈排练",
+      "state": "重复成片，用现有工作流和结果约束比较可行改动路线",
+      "invariant": "同一单圈可对应多个绝对圈宽，输出大小在物化前受限",
+      "observable": "按圈样本观察点",
+      "primary_mechanism": "capacity",
+      "workflow_ids": [
+        "rehearse"
+      ],
+      "source_anchors": [
+        "loopsill/repetition.py",
+        "loopsill/sound.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/repetition.py",
+          "loopsill/sound.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "repeat_samples",
+          "sample_from_span",
+          "rehearse"
+        ]
+      }
+    },
+    {
+      "id": "S6-preview",
+      "task_type": "技术讨论",
+      "capability_family": "试听播放头",
+      "subject": "试听播放头",
+      "state": "播放、跳转和停下，用现有工作流和结果约束比较可行改动路线",
+      "invariant": "音频缓冲采样时钟驱動畫格索引，抽页只供画面展示",
+      "observable": "预演画布和圈位",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/web/audition.js",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/web/audition.js",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "frameAt",
+          "currentPosition",
+          "preview_sheet"
+        ]
+      }
+    },
+    {
+      "id": "S6-wave",
+      "task_type": "技术讨论",
+      "capability_family": "源声道波形",
+      "subject": "源声道波形",
+      "state": "候选位置检查，用现有工作流和结果约束比较可行改动路线",
+      "invariant": "源拾音峰值按所选样本区间分别聚合各声道",
+      "observable": "峰值波形桶",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "inspect",
+        "measure"
+      ],
+      "source_anchors": [
+        "loopsill/waveform.py",
+        "loopsill/web/wave.js"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/waveform.py",
+          "loopsill/web/wave.js"
+        ],
+        "functions": [
+          "waveform",
+          "envelope",
+          "drawWave"
+        ]
+      }
+    },
+    {
+      "id": "S6-store",
+      "task_type": "技术讨论",
+      "capability_family": "素材与封存索引",
+      "subject": "素材与封存索引",
+      "state": "工作目录重开，用现有工作流和结果约束比较可行改动路线",
+      "invariant": "媒体字节和稿号索引都落在同一工位目录的 SQLite 库内",
+      "observable": "重启打开旧稿及环带",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "ingest",
+        "save",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/store.py",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/store.py",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "connect",
+          "handoff",
+          "_read_source"
+        ]
+      }
+    },
+    {
+      "id": "S7-clock",
+      "task_type": "问题排查与诊断",
+      "capability_family": "有理画格与样本时钟",
+      "subject": "有理画格与样本时钟",
+      "state": "非整数帧率或采样率，从输入、处理和输出三层定位可能的偏差来源",
+      "invariant": "样本边界由绝对画格和有理速率推导，来源偏移不进入输出时钟",
+      "observable": "视频画格与音频边界表",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "preview",
+        "rehearse"
+      ],
+      "source_anchors": [
+        "loopsill/clock.py",
+        "loopsill/plan.py",
+        "loopsill/repetition.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/clock.py",
+          "loopsill/plan.py",
+          "loopsill/repetition.py"
+        ],
+        "functions": [
+          "boundaries",
+          "make_plan",
+          "repeat_samples"
+        ]
+      }
+    },
+    {
+      "id": "S7-container",
+      "task_type": "问题排查与诊断",
+      "capability_family": "Y4M画面与PCM拾音",
+      "subject": "Y4M画面与PCM拾音",
+      "state": "配对前容器就绪，从输入、处理和输出三层定位可能的偏差来源",
+      "invariant": "画面和拾音分别解析，再由有序载荷摘要确定配对身份",
+      "observable": "登记结果或格式错误",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "ingest"
+      ],
+      "source_anchors": [
+        "loopsill/source.py",
+        "loopsill/y4m.py",
+        "loopsill/pcm.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/source.py",
+          "loopsill/y4m.py",
+          "loopsill/pcm.py"
+        ],
+        "functions": [
+          "decode_capture",
+          "parse_y4m",
+          "parse_wav"
+        ]
+      }
+    },
+    {
+      "id": "S7-offset",
+      "task_type": "问题排查与诊断",
+      "capability_family": "拾音对齐",
+      "subject": "拾音对齐",
+      "state": "有符号样本偏移，从输入、处理和输出三层定位可能的偏差来源",
+      "invariant": "有符号样本偏移同时改变首末拾音覆盖",
+      "observable": "测量时的边界和可用区间",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "inspect"
+      ],
+      "source_anchors": [
+        "loopsill/selection.py",
+        "loopsill/clock.py",
+        "loopsill/metrics.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/selection.py",
+          "loopsill/clock.py",
+          "loopsill/metrics.py"
+        ],
+        "functions": [
+          "interpret",
+          "sample",
+          "measure"
+        ]
+      }
+    },
+    {
+      "id": "S7-picture",
+      "task_type": "问题排查与诊断",
+      "capability_family": "画面接点",
+      "subject": "画面接点",
+      "state": "亮色空间取样，从输入、处理和输出三层定位可能的偏差来源",
+      "invariant": "亮度差和显示像素分别从 YUV 数据取得",
+      "observable": "接点邻帧及其差分值",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/picture.py",
+        "loopsill/metrics.py",
+        "loopsill/raster.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/picture.py",
+          "loopsill/metrics.py",
+          "loopsill/raster.py"
+        ],
+        "functions": [
+          "luma_difference",
+          "boundary",
+          "frame_png"
+        ]
+      }
+    },
+    {
+      "id": "S7-sound",
+      "task_type": "问题排查与诊断",
+      "capability_family": "声道接点",
+      "subject": "声道接点",
+      "state": "双声道边界，从输入、处理和输出三层定位可能的偏差来源",
+      "invariant": "双声道保留独立的跳变和窗口均方根读数",
+      "observable": "各声道接点误差",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/metrics.py",
+        "loopsill/pcm.py",
+        "loopsill/sound.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/metrics.py",
+          "loopsill/pcm.py",
+          "loopsill/sound.py"
+        ],
+        "functions": [
+          "audio_edge",
+          "sample",
+          "render_sound"
+        ]
+      }
+    },
+    {
+      "id": "S7-scan",
+      "task_type": "问题排查与诊断",
+      "capability_family": "接缝候选",
+      "subject": "接缝候选",
+      "state": "固定跨度搜索，从输入、处理和输出三层定位可能的偏差来源",
+      "invariant": "候选等长平移，丢弃不可用区间，按代价与移动量顺序取八项",
+      "observable": "排序及排除数",
+      "primary_mechanism": "ranking_reorder",
+      "workflow_ids": [
+        "scan"
+      ],
+      "source_anchors": [
+        "loopsill/search.py",
+        "loopsill/selection.py",
+        "loopsill/metrics.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/search.py",
+          "loopsill/selection.py",
+          "loopsill/metrics.py"
+        ],
+        "functions": [
+          "scan",
+          "interpret",
+          "measure"
+        ]
+      }
+    },
+    {
+      "id": "S7-proof",
+      "task_type": "问题排查与诊断",
+      "capability_family": "声画预演",
+      "subject": "声画预演",
+      "state": "生成单圈前后，从输入、处理和输出三层定位可能的偏差来源",
+      "invariant": "同一计划决定画格序列、音频长度及生效交叠位置",
+      "observable": "跨缝试听界面与取帧序列",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "preview",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/preview.py",
+        "loopsill/plan.py",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/preview.py",
+          "loopsill/plan.py",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "compile_preview",
+          "make_plan",
+          "preview_info"
+        ]
+      }
+    },
+    {
+      "id": "S7-overlap",
+      "task_type": "问题排查与诊断",
+      "capability_family": "交叠接点",
+      "subject": "交叠接点",
+      "state": "首尾交叠渲染，从输入、处理和输出三层定位可能的偏差来源",
+      "invariant": "直通格先输出，尾头混合格收束整圈，画面格混合和音频样本混合分开计算",
+      "observable": "首个直通画格与末尾混合画格",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "preview",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/plan.py",
+        "loopsill/sound.py",
+        "loopsill/picture.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/plan.py",
+          "loopsill/sound.py",
+          "loopsill/picture.py"
+        ],
+        "functions": [
+          "make_plan",
+          "render_sound",
+          "render_picture"
+        ]
+      }
+    },
+    {
+      "id": "S7-draft",
+      "task_type": "问题排查与诊断",
+      "capability_family": "接缝稿修订",
+      "subject": "接缝稿修订",
+      "state": "并行改稿，从输入、处理和输出三层定位可能的偏差来源",
+      "invariant": "追加稿号受预期最新稿约束，历史稿固定保留原选区和偏移",
+      "observable": "历史修订与冲突响应",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "save",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/store.py",
+        "loopsill/workbench.py",
+        "loopsill/web/history.js"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/store.py",
+          "loopsill/workbench.py",
+          "loopsill/web/history.js"
+        ],
+        "functions": [
+          "save",
+          "save",
+          "showHistory"
+        ]
+      }
+    },
+    {
+      "id": "S7-bundle",
+      "task_type": "问题排查与诊断",
+      "capability_family": "放映交付环带",
+      "subject": "放映交付环带",
+      "state": "封存及下载，从输入、处理和输出三层定位可能的偏差来源",
+      "invariant": "按已保存稿号封存媒体、来源与摘要，重复封存复用同一结果",
+      "observable": "ZIP、共同时间表与摘要",
+      "primary_mechanism": "export_freeze",
+      "workflow_ids": [
+        "freeze",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/handoff.py",
+        "loopsill/workbench.py",
+        "loopsill/store.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/handoff.py",
+          "loopsill/workbench.py",
+          "loopsill/store.py"
+        ],
+        "functions": [
+          "make_handoff",
+          "freeze",
+          "put_handoff"
+        ]
+      }
+    },
+    {
+      "id": "S7-verify",
+      "task_type": "问题排查与诊断",
+      "capability_family": "交付核验",
+      "subject": "交付核验",
+      "state": "离线接收，从输入、处理和输出三层定位可能的偏差来源",
+      "invariant": "封包成员摘要与解码后的尺寸、时钟及接缝事实须分别核对",
+      "observable": "离线验收输出",
+      "primary_mechanism": "lineage",
+      "workflow_ids": [
+        "verify",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/verify.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/verify.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "verify_handoff",
+          "verify_facts",
+          "open_handoff"
+        ]
+      }
+    },
+    {
+      "id": "S7-repeat",
+      "task_type": "问题排查与诊断",
+      "capability_family": "多圈排练",
+      "subject": "多圈排练",
+      "state": "重复成片，从输入、处理和输出三层定位可能的偏差来源",
+      "invariant": "同一单圈可对应多个绝对圈宽，输出大小在物化前受限",
+      "observable": "按圈样本观察点",
+      "primary_mechanism": "capacity",
+      "workflow_ids": [
+        "rehearse"
+      ],
+      "source_anchors": [
+        "loopsill/repetition.py",
+        "loopsill/sound.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/repetition.py",
+          "loopsill/sound.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "repeat_samples",
+          "sample_from_span",
+          "rehearse"
+        ]
+      }
+    },
+    {
+      "id": "S7-preview",
+      "task_type": "问题排查与诊断",
+      "capability_family": "试听播放头",
+      "subject": "试听播放头",
+      "state": "播放、跳转和停下，从输入、处理和输出三层定位可能的偏差来源",
+      "invariant": "音频缓冲采样时钟驱動畫格索引，抽页只供画面展示",
+      "observable": "预演画布和圈位",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/web/audition.js",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/web/audition.js",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "frameAt",
+          "currentPosition",
+          "preview_sheet"
+        ]
+      }
+    },
+    {
+      "id": "S7-wave",
+      "task_type": "问题排查与诊断",
+      "capability_family": "源声道波形",
+      "subject": "源声道波形",
+      "state": "候选位置检查，从输入、处理和输出三层定位可能的偏差来源",
+      "invariant": "源拾音峰值按所选样本区间分别聚合各声道",
+      "observable": "峰值波形桶",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "inspect",
+        "measure"
+      ],
+      "source_anchors": [
+        "loopsill/waveform.py",
+        "loopsill/web/wave.js"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/waveform.py",
+          "loopsill/web/wave.js"
+        ],
+        "functions": [
+          "waveform",
+          "envelope",
+          "drawWave"
+        ]
+      }
+    },
+    {
+      "id": "S7-store",
+      "task_type": "问题排查与诊断",
+      "capability_family": "素材与封存索引",
+      "subject": "素材与封存索引",
+      "state": "工作目录重开，从输入、处理和输出三层定位可能的偏差来源",
+      "invariant": "媒体字节和稿号索引都落在同一工位目录的 SQLite 库内",
+      "observable": "重启打开旧稿及环带",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "ingest",
+        "save",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/store.py",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/store.py",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "connect",
+          "handoff",
+          "_read_source"
+        ]
+      }
+    },
+    {
+      "id": "S8-clock",
+      "task_type": "部署运维",
+      "capability_family": "有理画格与样本时钟",
+      "subject": "有理画格与样本时钟",
+      "state": "非整数帧率或采样率，用真实读写位置和交付材料验证工位运行交接",
+      "invariant": "样本边界由绝对画格和有理速率推导，来源偏移不进入输出时钟",
+      "observable": "视频画格与音频边界表",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "preview",
+        "rehearse"
+      ],
+      "source_anchors": [
+        "loopsill/clock.py",
+        "loopsill/plan.py",
+        "loopsill/repetition.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/clock.py",
+          "loopsill/plan.py",
+          "loopsill/repetition.py"
+        ],
+        "functions": [
+          "boundaries",
+          "make_plan",
+          "repeat_samples"
+        ]
+      }
+    },
+    {
+      "id": "S8-container",
+      "task_type": "部署运维",
+      "capability_family": "Y4M画面与PCM拾音",
+      "subject": "Y4M画面与PCM拾音",
+      "state": "配对前容器就绪，用真实读写位置和交付材料验证工位运行交接",
+      "invariant": "画面和拾音分别解析，再由有序载荷摘要确定配对身份",
+      "observable": "登记结果或格式错误",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "ingest"
+      ],
+      "source_anchors": [
+        "loopsill/source.py",
+        "loopsill/y4m.py",
+        "loopsill/pcm.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/source.py",
+          "loopsill/y4m.py",
+          "loopsill/pcm.py"
+        ],
+        "functions": [
+          "decode_capture",
+          "parse_y4m",
+          "parse_wav"
+        ]
+      }
+    },
+    {
+      "id": "S8-offset",
+      "task_type": "部署运维",
+      "capability_family": "拾音对齐",
+      "subject": "拾音对齐",
+      "state": "有符号样本偏移，用真实读写位置和交付材料验证工位运行交接",
+      "invariant": "有符号样本偏移同时改变首末拾音覆盖",
+      "observable": "测量时的边界和可用区间",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "inspect"
+      ],
+      "source_anchors": [
+        "loopsill/selection.py",
+        "loopsill/clock.py",
+        "loopsill/metrics.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/selection.py",
+          "loopsill/clock.py",
+          "loopsill/metrics.py"
+        ],
+        "functions": [
+          "interpret",
+          "sample",
+          "measure"
+        ]
+      }
+    },
+    {
+      "id": "S8-picture",
+      "task_type": "部署运维",
+      "capability_family": "画面接点",
+      "subject": "画面接点",
+      "state": "亮色空间取样，用真实读写位置和交付材料验证工位运行交接",
+      "invariant": "亮度差和显示像素分别从 YUV 数据取得",
+      "observable": "接点邻帧及其差分值",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/picture.py",
+        "loopsill/metrics.py",
+        "loopsill/raster.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/picture.py",
+          "loopsill/metrics.py",
+          "loopsill/raster.py"
+        ],
+        "functions": [
+          "luma_difference",
+          "boundary",
+          "frame_png"
+        ]
+      }
+    },
+    {
+      "id": "S8-sound",
+      "task_type": "部署运维",
+      "capability_family": "声道接点",
+      "subject": "声道接点",
+      "state": "双声道边界，用真实读写位置和交付材料验证工位运行交接",
+      "invariant": "双声道保留独立的跳变和窗口均方根读数",
+      "observable": "各声道接点误差",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "measure",
+        "scan",
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/metrics.py",
+        "loopsill/pcm.py",
+        "loopsill/sound.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/metrics.py",
+          "loopsill/pcm.py",
+          "loopsill/sound.py"
+        ],
+        "functions": [
+          "audio_edge",
+          "sample",
+          "render_sound"
+        ]
+      }
+    },
+    {
+      "id": "S8-scan",
+      "task_type": "部署运维",
+      "capability_family": "接缝候选",
+      "subject": "接缝候选",
+      "state": "固定跨度搜索，用真实读写位置和交付材料验证工位运行交接",
+      "invariant": "候选等长平移，丢弃不可用区间，按代价与移动量顺序取八项",
+      "observable": "排序及排除数",
+      "primary_mechanism": "ranking_reorder",
+      "workflow_ids": [
+        "scan"
+      ],
+      "source_anchors": [
+        "loopsill/search.py",
+        "loopsill/selection.py",
+        "loopsill/metrics.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/search.py",
+          "loopsill/selection.py",
+          "loopsill/metrics.py"
+        ],
+        "functions": [
+          "scan",
+          "interpret",
+          "measure"
+        ]
+      }
+    },
+    {
+      "id": "S8-proof",
+      "task_type": "部署运维",
+      "capability_family": "声画预演",
+      "subject": "声画预演",
+      "state": "生成单圈前后，用真实读写位置和交付材料验证工位运行交接",
+      "invariant": "同一计划决定画格序列、音频长度及生效交叠位置",
+      "observable": "跨缝试听界面与取帧序列",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "preview",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/preview.py",
+        "loopsill/plan.py",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/preview.py",
+          "loopsill/plan.py",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "compile_preview",
+          "make_plan",
+          "preview_info"
+        ]
+      }
+    },
+    {
+      "id": "S8-overlap",
+      "task_type": "部署运维",
+      "capability_family": "交叠接点",
+      "subject": "交叠接点",
+      "state": "首尾交叠渲染，用真实读写位置和交付材料验证工位运行交接",
+      "invariant": "直通格先输出，尾头混合格收束整圈，画面格混合和音频样本混合分开计算",
+      "observable": "首个直通画格与末尾混合画格",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "preview",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/plan.py",
+        "loopsill/sound.py",
+        "loopsill/picture.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/plan.py",
+          "loopsill/sound.py",
+          "loopsill/picture.py"
+        ],
+        "functions": [
+          "make_plan",
+          "render_sound",
+          "render_picture"
+        ]
+      }
+    },
+    {
+      "id": "S8-draft",
+      "task_type": "部署运维",
+      "capability_family": "接缝稿修订",
+      "subject": "接缝稿修订",
+      "state": "并行改稿，用真实读写位置和交付材料验证工位运行交接",
+      "invariant": "追加稿号受预期最新稿约束，历史稿固定保留原选区和偏移",
+      "observable": "历史修订与冲突响应",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "save",
+        "freeze"
+      ],
+      "source_anchors": [
+        "loopsill/store.py",
+        "loopsill/workbench.py",
+        "loopsill/web/history.js"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/store.py",
+          "loopsill/workbench.py",
+          "loopsill/web/history.js"
+        ],
+        "functions": [
+          "save",
+          "save",
+          "showHistory"
+        ]
+      }
+    },
+    {
+      "id": "S8-bundle",
+      "task_type": "部署运维",
+      "capability_family": "放映交付环带",
+      "subject": "放映交付环带",
+      "state": "封存及下载，用真实读写位置和交付材料验证工位运行交接",
+      "invariant": "按已保存稿号封存媒体、来源与摘要，重复封存复用同一结果",
+      "observable": "ZIP、共同时间表与摘要",
+      "primary_mechanism": "export_freeze",
+      "workflow_ids": [
+        "freeze",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/handoff.py",
+        "loopsill/workbench.py",
+        "loopsill/store.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/handoff.py",
+          "loopsill/workbench.py",
+          "loopsill/store.py"
+        ],
+        "functions": [
+          "make_handoff",
+          "freeze",
+          "put_handoff"
+        ]
+      }
+    },
+    {
+      "id": "S8-verify",
+      "task_type": "部署运维",
+      "capability_family": "交付核验",
+      "subject": "交付核验",
+      "state": "离线接收，用真实读写位置和交付材料验证工位运行交接",
+      "invariant": "封包成员摘要与解码后的尺寸、时钟及接缝事实须分别核对",
+      "observable": "离线验收输出",
+      "primary_mechanism": "lineage",
+      "workflow_ids": [
+        "verify",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/verify.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/verify.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "verify_handoff",
+          "verify_facts",
+          "open_handoff"
+        ]
+      }
+    },
+    {
+      "id": "S8-repeat",
+      "task_type": "部署运维",
+      "capability_family": "多圈排练",
+      "subject": "多圈排练",
+      "state": "重复成片，用真实读写位置和交付材料验证工位运行交接",
+      "invariant": "同一单圈可对应多个绝对圈宽，输出大小在物化前受限",
+      "observable": "按圈样本观察点",
+      "primary_mechanism": "capacity",
+      "workflow_ids": [
+        "rehearse"
+      ],
+      "source_anchors": [
+        "loopsill/repetition.py",
+        "loopsill/sound.py",
+        "loopsill/offline.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/repetition.py",
+          "loopsill/sound.py",
+          "loopsill/offline.py"
+        ],
+        "functions": [
+          "repeat_samples",
+          "sample_from_span",
+          "rehearse"
+        ]
+      }
+    },
+    {
+      "id": "S8-preview",
+      "task_type": "部署运维",
+      "capability_family": "试听播放头",
+      "subject": "试听播放头",
+      "state": "播放、跳转和停下，用真实读写位置和交付材料验证工位运行交接",
+      "invariant": "音频缓冲采样时钟驱動畫格索引，抽页只供画面展示",
+      "observable": "预演画布和圈位",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "preview"
+      ],
+      "source_anchors": [
+        "loopsill/web/audition.js",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/web/audition.js",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "frameAt",
+          "currentPosition",
+          "preview_sheet"
+        ]
+      }
+    },
+    {
+      "id": "S8-wave",
+      "task_type": "部署运维",
+      "capability_family": "源声道波形",
+      "subject": "源声道波形",
+      "state": "候选位置检查，用真实读写位置和交付材料验证工位运行交接",
+      "invariant": "源拾音峰值按所选样本区间分别聚合各声道",
+      "observable": "峰值波形桶",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "inspect",
+        "measure"
+      ],
+      "source_anchors": [
+        "loopsill/waveform.py",
+        "loopsill/web/wave.js"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/waveform.py",
+          "loopsill/web/wave.js"
+        ],
+        "functions": [
+          "waveform",
+          "envelope",
+          "drawWave"
+        ]
+      }
+    },
+    {
+      "id": "S8-store",
+      "task_type": "部署运维",
+      "capability_family": "素材与封存索引",
+      "subject": "素材与封存索引",
+      "state": "工作目录重开，用真实读写位置和交付材料验证工位运行交接",
+      "invariant": "媒体字节和稿号索引都落在同一工位目录的 SQLite 库内",
+      "observable": "重启打开旧稿及环带",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "ingest",
+        "save",
+        "download"
+      ],
+      "source_anchors": [
+        "loopsill/store.py",
+        "loopsill/workbench.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "loopsill/store.py",
+          "loopsill/workbench.py"
+        ],
+        "functions": [
+          "connect",
+          "handoff",
+          "_read_source"
+        ]
+      }
+    }
+  ]
+}
